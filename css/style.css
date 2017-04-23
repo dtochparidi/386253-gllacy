@@ -1,12 +1,11 @@
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Regular.ttf);
-  src: url(../fonts/Roboto-Bold.ttf);
   }
 
 body {
   background-color: #9aaea3;
-  font-size: 16pt;
+  font-size: 16px;
   color: #ffffff;
   font-family: Roboto;
 }
@@ -32,6 +31,24 @@ ul {
 button {
    font-weight: bold;
    color: #ffffff;
+   text-decoration: none;
+   text-align: center;
+   border: 0px;
+   font-size: 18px;
+}
+
+.btn {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  opacity: 0.988;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  left: 401px;
+  top: 807px;
+  width: 165px;
+  height: 46px;
+  border-radius: 20px;
+  text-decoration: none;
 }
 
 .main-title {
@@ -40,63 +57,37 @@ button {
 
 .main-navigation li {
   font-weight: bold;
-  font-size: 16px;
 }
 
-.main-navigation li ul li {
+.main-navigation li ul li:nth-child(n+2) a {
   font-size: 14px;
   font-weight: normal;
-}
-
-.main-navigation li ul a {
   text-decoration: none;
 }
 
-.main-navigation li ul li:first-child {
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.hover button {
-  font-size: 18px;
-}
-
-.hover a {
+.login-form a {
   font-size: 13px;
-  font-weight: normal;
 }
 
-.goods {
+.purchase-popup {
   font-size: 13px;
-  font-weight: normal;
 }
 
-.goods span{
+.purchase-popup span{
   color: #999999;
 }
 
-.goods button{
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.goods .bold {
+.purchase-popup .bold {
   font-size: 14px;
   font-weight: bold;
 }
 
-.goods .close {
-  font-size: 14px;
-  font-weight: normal;
-}
-
-.header-bottom-block {
+.time {
   font-size: 15px;
   font-weight: bold;
 }
 
-.header-bottom-block strong{
+.time strong{
   font-size: 22px;
   font-weight: bold;
 }
@@ -107,59 +98,49 @@ button {
   text-decoration: none;
 }
 
-.left-block h3, .right-block h3 {
+.right-block, .left-block {
   font-weight: bold;
+  font-size: 18px;
+}
+
+.left-block h3, .right-block h3 {
   font-size: 35px;
 }
 
-.left-block p, .right-block p {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.left-block a, .right-block a {
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.icecream-articles strong {
+.articles strong {
   font-weight: bold;
   font-size: 45px;
   text-align: left;
 }
 
-.icecream-articles strong span {
+.articles strong span {
   font-size: 30px;
 }
 
-.icecream-articles a {
-  font-size: 16px;
+.articles a p {
   text-align: center;
   font-weight: normal;
+}
+
+.articles a .btn{
+  font-size: 18px;
 }
 
 .features h3 {
   font-size: 24px;
 }
 
-.features p {
-  font-size: 24px;
-}
-
-.left-block p {
+.blog p {
   text-align: left;
 }
 
-.left-block a {
+.blog a {
   font-size: 24px;
   font-weight: bold;
-  text-decoration: underline;
 }
 
-.right-block button {
+.mail button {
   font-size: 18px;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -174,12 +155,10 @@ button {
 
 .map-contacts button {
   font-size: 18px;
-  font-weight: bold;
 }
 
 .map-contacts legend {
   font-size: 24px;
-  font-weight: normal;
 }
 
 .about {
@@ -205,28 +184,10 @@ button {
   font-weight: bold;
 }
 
-.filter {
-  font-size: 16px;
-}
-
 .filter legend, .filter p {
   font-size: 14px;
 }
 
-.articles p {
-  text-align: center;
-}
-
-.articles strong {
-  text-align: left;
-}
-
-.articles a {
-  font-size: 18px;
-  text-decoration: none;
-}
-
 .pages a{
-  font-size: 16px;
   text-decoration: none;
 }

@@ -29,13 +29,13 @@
        <button class=btn-search type="button">
         <img src="img/lupa-b.png" alt="search" width="17" height="17">
        </button>
-       <form class="hover search" action="#" method="post">
+       <form class="search" action="#" method="post">
         <input type="text" name="search" value="Что ищем?">
        </form>
        <button class="btn-login" type="button">
         <img src="img/login-b.png" alt="login" width="21" height="19">Вход
        </button>
-       <form class="hover search" action="#" method="post">
+       <form class="login-form" action="#" method="post">
         <input type="text" name="login" value="Электронная почта"><br>
         <input type="password" name="pass" value="Пароль"><br>
         <button class="btn" type="submit" name="enter">Войти</button>
@@ -45,7 +45,7 @@
        <button class="purchase" type="button">
         <img src="img/korzina-b.png" alt="purchase" width="21" height="20"> Пусто
        </button>
-       <table class="goods">
+       <table class="purchase-popup">
         <tr>
          <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
          <td><img src="img/1s-b.jpg" alt="icecream" width="33" height="33"></td>
@@ -107,15 +107,15 @@
    <main class="container">
      <section class="left-block">
       <h3>Малинка даром</h3>
-      <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
+      <p>При покупке 2 кг любого фруктового мороженного, добавим <br> в ваш заказ банку малинового варенья бесплатно</p>
       <a href="#" class="btn">  Хочу варенье! </a>
     </section>
      <section class="right-block">
       <h3>Шоколад даром!</h3>
-      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-      <a href="#" class="btn"> Хочу варенье! </a>
+      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br> вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+      <a href="#" class="btn"> Хочу шоколадки! </a>
     </section>
-     <div class="icecream-articles">
+     <div class="articles">
       <article class="icecream-articles-1">
         <b class="hit">ХИТ</b>
         <img src="img/1-b.jpg" alt="310₽/кг" width="267" height="267">
@@ -161,16 +161,16 @@
       <p>Доставка нашего мороженого до<br> заказчиков осуществляется в специальном <br>термопаке,
       который не дает мороженому<br> растаять в пути и позволяет сохранить<br> превосходный вкус.</p>
      </section>
-     <div class="left-block">
+     <div class="blog">
       <p>Новое в нашем блоге</p>
       <a href="#">10 способов сервировки <br> фруктовых щербетов к<br> столу </a>
      </div>
-     <form class="right-block" action="fdf" method="get">
+     <form class="mail" action="fdf" method="get">
       <p>Подпишитесь на нашу сладкую рассылку <br>
          и будете всегда в курсе всего самого вкусного, что у нас происходит.<br>
          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
       <input type="text" name="mail" value="Электронная почта">
-      <button type="submit" name="btn">  Отправить </button>
+      <button class="btn" type="submit" name="mail-submit">  Отправить </button>
      </form>
      <div class="map">
       <section class="map-contacts">
