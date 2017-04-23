@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+  }
+
+body {
+  background-color: #9aaea3;
+  font-size: 16pt;
+  color: #ffffff;
+  font-family: Roboto;
+}
+
+
+h2 {
+
+}
+
+p {
+
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffbc9e;
+}
+
+li {
+  font-size: 18pt;
+}
+
+.sub-menu {
+  font-size:16pt;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.main-title {
+  font-size: 40px;
+}
+
+.btn-login {
+  font-size: 14pt;
+}
