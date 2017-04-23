@@ -1,6 +1,7 @@
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Bold.ttf);
   }
 
 body {
@@ -8,15 +9,6 @@ body {
   font-size: 16pt;
   color: #ffffff;
   font-family: Roboto;
-}
-
-
-h2 {
-
-}
-
-p {
-
 }
 
 a {
@@ -29,21 +21,212 @@ a:hover {
 }
 
 li {
-  font-size: 18pt;
+  list-style-type: none;
 }
 
-.sub-menu {
-  font-size:16pt;
-}
+ul {
+   margin-left: 0;
+   padding-left: 0;
+  }
 
-.active {
-  font-weight: bold;
+button {
+   font-weight: bold;
+   color: #ffffff;
 }
 
 .main-title {
   font-size: 40px;
 }
 
-.btn-login {
-  font-size: 14pt;
+.main-navigation li {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main-navigation li ul li {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.main-navigation li ul a {
+  text-decoration: none;
+}
+
+.main-navigation li ul li:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.hover button {
+  font-size: 18px;
+}
+
+.hover a {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.goods {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.goods span{
+  color: #999999;
+}
+
+.goods button{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.goods .bold {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.goods .close {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.header-bottom-block {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header-bottom-block strong{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.slider a {
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.left-block h3, .right-block h3 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.left-block p, .right-block p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.left-block a, .right-block a {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.icecream-articles strong {
+  font-weight: bold;
+  font-size: 45px;
+  text-align: left;
+}
+
+.icecream-articles strong span {
+  font-size: 30px;
+}
+
+.icecream-articles a {
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.features h3 {
+  font-size: 24px;
+}
+
+.features p {
+  font-size: 24px;
+}
+
+.left-block p {
+  text-align: left;
+}
+
+.left-block a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.right-block button {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.map-contacts p {
+  font-size: 14px;
+}
+
+.map-contacts span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.map-contacts button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.map-contacts legend {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.about {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.sign {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.root a {
+  font-size: 14px;
+}
+
+.root li:last-child a{
+  text-decoration: none;
+}
+
+.catalog-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.filter {
+  font-size: 16px;
+}
+
+.filter legend, .filter p {
+  font-size: 14px;
+}
+
+.articles p {
+  text-align: center;
+}
+
+.articles strong {
+  text-align: left;
+}
+
+.articles a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.pages a{
+  font-size: 16px;
+  text-decoration: none;
 }

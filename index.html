@@ -14,7 +14,7 @@
      <nav class="main-navigation">
       <ul>
         <li><a class="active" href="catalogue.html" title="catalogue">Каталог</a>
-         <ul class="submenu">
+         <ul>
           <li><a href="#" title="#">Новинки</a></li>
           <li><a href="#" title="#">Сливочное</a></li>
           <li><a href="#" title="#">Щербеты</a></li>
@@ -29,13 +29,13 @@
        <button class=btn-search type="button">
         <img src="img/lupa-b.png" alt="search" width="17" height="17">
        </button>
-       <form class="hover search" action="#" method="get">
+       <form class="hover search" action="#" method="post">
         <input type="text" name="search" value="Что ищем?">
        </form>
        <button class="btn-login" type="button">
         <img src="img/login-b.png" alt="login" width="21" height="19">Вход
        </button>
-       <form class="hover search" action="#" method="get">
+       <form class="hover search" action="#" method="post">
         <input type="text" name="login" value="Электронная почта"><br>
         <input type="password" name="pass" value="Пароль"><br>
         <button class="btn" type="submit" name="enter">Войти</button>
@@ -50,18 +50,18 @@
          <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
          <td><img src="img/1s-b.jpg" alt="icecream" width="33" height="33"></td>
          <td>Пломбир с апельсиновым джемом</td>
-         <td>1,5 кг х 200 руб.</td>
+         <td>1,5 кг х <span>200 руб.</span></td>
          <td>300 руб.</td>
         </tr>
         <tr>
          <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
          <td><img src="img/2s-b.jpg" alt="icecream" width="33" height="33"></td>
          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-         <td>1,5 кг х 300 руб.</td>
+         <td>1,5 кг х <span>300 руб.</span></td>
          <td>450 руб.</td>
         </tr>
         <tr>
-          <td colspan="4">Итого: 750 руб. </td>
+          <td class="bold" colspan="4">Итого: 750 руб. </td>
         </tr>
         <tr>
           <td colspan="4"><button class="btn" type="submit">Оформить заказ</button> </td>
@@ -71,26 +71,26 @@
      </nav>
     </div>
     <div class="header-bottom-block">
-     <p class="time">С 10 до 20, ежедневно <strong class="tel">8 812 450-25-25</strong></p>
+     <p class="time">С 10 до 20, ежедневно <br><strong class="tel">8 812 450-25-25</strong></p>
        <div class="slider">
         <div class="slider-slide1">
          <img class="main-image" src="img/big-b.png" alt="icecream" width="1045" height="881">
          <div class="main-title">
-          <h2>Крем брюле и пломбир с малиновым джемом</h2>
+          <h2>Крем брюле и пломбир<br> с малиновым джемом</h2>
          </div>
          <a href="#" class="btn"> Давайте оба! </a>
         </div>
         <div class="slider-slide2">
          <img class="main-image" src="#" alt="" width="20" height="20">
          <div class="main-title">
-          <h2>Крем брюле и пломбир с малиновым джемом</h2>
+          <h2>Крем брюле и пломбир<br> с малиновым джемом</h2>
          </div>
          <a href="#" class="btn">  Давайте оба!  </a>
         </div>
         <div class="slider-slide3">
          <img class="main-image" src="#" alt="" width="20" height="20">
          <div class="main-title">
-          <h2>Крем брюле и пломбир с малиновым джемом</h2>
+          <h2>Крем брюле и пломбир<br> с малиновым джемом</h2>
          </div>
          <a href="#" class="btn">   Давайте оба! </a>
         </div>
@@ -119,63 +119,63 @@
       <article class="icecream-articles-1">
         <b class="hit">ХИТ</b>
         <img src="img/1-b.jpg" alt="310₽/кг" width="267" height="267">
-        <strong class="price">310₽/кг</strong>
-        <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+        <strong class="price">310₽<span>/кг</span></strong>
+        <a href="#"><p class="description">Сливочное с<br> апельсиновым джемом<br> и цитрусовой стружкой</p></a>
         <a class="btn" href="#" title="#"><b>Быстрый просмотр</b></a>
       </article>
       <article class="icecream-articles-2">
         <b class="hit">ХИТ</b>
         <img src="img/2-b.jpg" alt="380₽/кг" width="267" height="267">
-        <strong class="price">380₽/кг</strong>
-        <p class="description">Сливочно-кофейное с кусочками шоколада</p>
+        <strong class="price">380₽<span>/кг</span></strong>
+        <a href="#"><p class="description">Сливочно-кофейное с<br> кусочками шоколада</p></a>
         <a class="btn" href="#" title="#"><b>Быстрый просмотр</b></a>
       </article>
       <article class="icecream-articles-3">
         <b class="hit">ХИТ</b>
         <img src="img/3-b.jpg" alt="355₽/кг" width="267" height="267">
-        <strong class="price">355₽/кг</strong>
-        <p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+        <strong class="price">355₽<span>/кг</span></strong>
+        <a href="#"><p class="description">Сливочно-клубничное с<br> присыпкой из белого<br> шоколада</p></a>
         <a class="btn" href="#" title="#"><b>Быстрый просмотр</b></a>
       </article>
       <article class="icecream-articles-4">
         <b class="hit">ХИТ</b>
         <img src="img/4-b.jpg" alt="415₽/кг" width="267" height="267">
-        <strong class="price">415₽/кг</strong>
-        <p class="description">Сливочное крем-брюле с карамельной подливкой </p>
+        <strong class="price">415₽<span>/кг</span></strong>
+        <a href="#"><p class="description">Сливочное крем-брюле<br> с карамельной<br> подливкой </p></a>
         <a class="btn" href="#" title="#"><b>Быстрый просмотр</b></a>
       </article>
      </div>
      <section class="features">
-      <h3 class="features-title">Магазин Глейси это онлайн и офлайн магазин по продаже мороженного
+      <h3>Магазин Глейси это онлайн и офлайн магазин по продаже мороженного
       собственного производства </h3>
       <img src="img/ice-b.png" alt="icecream" width="49" height="49">
-      <p>Все наше мороженое изготавливается на собственном производстве,
-      с использованием современного оборудования и проверенных временем технологий.</p>
+      <p>Все наше мороженое изготавливается на<br> собственном производстве,
+      с <br>использованием современного <br>оборудования и проверенных временем<br> технологий.</p>
       <img src="img/kor-b.png" alt="cow" width="48" height="49">
-      <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
-      с которыми нас связывает долговременное сотрудничество.</p>
+      <p>Закупка ингредиентов  производится только<br> у проверенных фермерских хозяйств и<br> компаний,
+      с которыми нас связывает<br> долговременное сотрудничество.</p>
       <img src="img/list-b.png" alt="leaf" width="49" height="49">
-      <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-      Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+      <p>Для приготовления мороженого <br>используются настоящие сливки и молоко<br> высочайшего качества.
+      Все дополнительные <br>ингредиенты и добавки произведены из <br>натурального, экологически чистого сырья.</p>
       <img src="img/grad-b.png" alt="temp" width="48" height="49">
-      <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-      который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      <p>Доставка нашего мороженого до<br> заказчиков осуществляется в специальном <br>термопаке,
+      который не дает мороженому<br> растаять в пути и позволяет сохранить<br> превосходный вкус.</p>
      </section>
-     <div class="left-block tips">
-      <strong>Новое в нашем блоге</strong>
-      <a href="#">10 способов сервировки фруктовых щербетов к столу </a>
+     <div class="left-block">
+      <p>Новое в нашем блоге</p>
+      <a href="#">10 способов сервировки <br> фруктовых щербетов к<br> столу </a>
      </div>
-      <form class="right-block-form" action="fdf" method="get">
-        <p>Подпишитесь на нашу сладкую рассылку
-           и будете всегда в курсе всего самого вкусного, что у нас происходит.
-           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-       <input type="text" name="mail" value="Электронная почта">
-       <button type="submit" name="btn">  Отправить </button>
-      </form>
+     <form class="right-block" action="fdf" method="get">
+      <p>Подпишитесь на нашу сладкую рассылку <br>
+         и будете всегда в курсе всего самого вкусного, что у нас происходит.<br>
+         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+      <input type="text" name="mail" value="Электронная почта">
+      <button type="submit" name="btn">  Отправить </button>
+     </form>
      <div class="map">
       <section class="map-contacts">
-       <p>Адрес главного офиса и офлайн магазина:<span> ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-       <p>Для заказов по телефону <strong>8 812 450-25-25</strong>(с 10 до 20 ежедневно)</p>
+       <p>Адрес главного офиса <br> и офлайн магазина:<br><span> ул. Большая Конюшенная <br>19/8, Санкт-Петербург</span></p>
+       <p>Для заказов по телефону:<br> <strong>8 812 450-25-25</strong><br>(с 10 до 20 ежедневно)</p>
        <button class="btn">Форма обратной связи</button>
        <form class="feedback" action="abc" method="post">
         <fieldset>
@@ -203,13 +203,14 @@
       <a href="#" title="">Экологические стандарты</a>
      </div>
      <div class="sign">
-      <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"><img src="img/academy-b.png" alt="html-academy" width="108" height="38">
-      <p>Сделано в   <span> HTML Academy </span> 2016</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy">
+        <img src="img/academy-b.png" alt="html-academy" width="108" height="38">
       </a>
+      <p>Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"> <span> HTML Academy </span> </a>2016</p>
      </div>
     </div>
    </footer>
 
 
   </body>
-</html>
+</h
