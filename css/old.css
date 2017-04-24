@@ -1,0 +1,202 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+  }
+
+body {
+  background-color: #9aaea3;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Roboto;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffbc9e;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+   margin-left: 0;
+   padding-left: 0;
+  }
+
+button {
+   font-weight: bold;
+   color: #ffffff;
+   text-decoration: none;
+   text-align: center;
+   border: 0px;
+   font-size: 18px;
+}
+
+.btn {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 5px;
+  display: table;
+}
+
+.btn:hover {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.main-title {
+  font-size: 40px;
+}
+
+.main-navigation li {
+  font-weight: bold;
+}
+
+.main-navigation li ul li:nth-child(n+2) a {
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.login-form a {
+  font-size: 13px;
+}
+
+.purchase-popup {
+  font-size: 13px;
+}
+
+.purchase-popup span{
+  color: #999999;
+}
+
+.purchase-popup .bold {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.time strong{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.slider a {
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.right-block, .left-block {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.left-block h3, .right-block h3 {
+  font-size: 35px;
+}
+
+.articles strong {
+  font-weight: bold;
+  font-size: 45px;
+  text-align: left;
+}
+
+.articles strong span {
+  font-size: 30px;
+}
+
+.articles a p {
+  text-align: center;
+  font-weight: normal;
+}
+
+.articles a .btn{
+  font-size: 18px;
+}
+
+.features h3 {
+  font-size: 24px;
+}
+
+.blog p {
+  text-align: left;
+}
+
+.blog a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mail button {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.map-contacts p {
+  font-size: 14px;
+}
+
+.map-contacts span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.map-contacts button {
+  font-size: 18px;
+}
+
+.map-contacts legend {
+  font-size: 24px;
+}
+
+.about {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.sign {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.root a {
+  font-size: 14px;
+}
+
+.root li:last-child a{
+  text-decoration: none;
+}
+
+.catalog-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.filter legend, .filter p {
+  font-size: 14px;
+}
+
+.pages a{
+  text-decoration: none;
+}
