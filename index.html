@@ -9,12 +9,11 @@
   </head>
   <body>
    <header class="main-header">
-    <div class="container">
-     <nav class="main-navigation">
-      <div class=logo-container>
+    <div class="container flex">
+     <div class=logo-container>
        <a href="#"><img class="main-logo" src="img/logo-b.png" alt="logo" width="154" height="64"></a>
-      </div>
-      <div class="navigation">
+     </div>
+     <nav class="main-navigation">
        <ul class="zero-ull">
         <li class="list"><a class="active" href="catalogue.html" title="catalogue">Каталог</a>
          <ul class="hidden">
@@ -28,71 +27,67 @@
         <li class="list"><a href="#" title="">Доставка и оплата</a></li>
         <li class="list"><a href="#" title="">О компании</a></li>
        </ul>
-      </div>
-      <div class="user-block">
-       <button class=btn-search type="button">
-        <img src="img/lupa-b.png" alt="search" width="17" height="17">
-       </button>
-       <form class="search hidden" action="#" method="post">
-        <input type="text" name="search" value="Что ищем?">
-       </form>
-       <button class="btn-login" type="button">
-        <img src="img/login-b.png" alt="login" width="21" height="19">Вход
-       </button>
-       <form class="login-form hidden" action="#" method="post">
-        <input type="text" name="login" value="Электронная почта"><br>
-        <input type="password" name="pass" value="Пароль"><br>
-        <button class="btn" type="submit" name="enter">Войти</button>
-        <a href="#" title="#">Забыли пароль ? </a><br>
-        <a href="#" title="#">Новая регистрация</a>
-       </form>
-       <button class="purchase" type="button">
-        <img src="img/korzina-b.png" alt="purchase" width="21" height="20"> Пусто
-       </button>
-       <table class="purchase-popup hidden">
-        <tr>
-         <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
-         <td><img src="img/1s-b.jpg" alt="icecream" width="33" height="33"></td>
-         <td>Пломбир с апельсиновым джемом</td>
-         <td>1,5 кг х <span>200 руб.</span></td>
-         <td>300 руб.</td>
-        </tr>
-        <tr>
-         <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
-         <td><img src="img/2s-b.jpg" alt="icecream" width="33" height="33"></td>
-         <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-         <td>1,5 кг х <span>300 руб.</span></td>
-         <td>450 руб.</td>
-        </tr>
-        <tr>
-          <td class="bold" colspan="4">Итого: 750 руб. </td>
-        </tr>
-        <tr>
-          <td colspan="4"><button class="btn" type="submit">Оформить заказ</button> </td>
-        </tr>
-       </table>
-      </div>
      </nav>
+     <div class="user-block">
+      <button class=btn-search type="button">
+       <img src="img/lupa-b.png" alt="search" width="17" height="17">
+      </button>
+      <form class="search hidden" action="#" method="post">
+       <input type="text" name="search" value="Что ищем?">
+      </form>
+      <button class="btn-login" type="button">
+       <img src="img/login-b.png" alt="login" width="21" height="19">Вход
+      </button>
+      <form class="login-form hidden" action="#" method="post">
+       <input type="text" name="login" value="Электронная почта"><br>
+       <input type="password" name="pass" value="Пароль"><br>
+       <button class="btn" type="submit" name="enter">Войти</button>
+       <a href="#" title="#">Забыли пароль ? </a><br>
+       <a href="#" title="#">Новая регистрация</a>
+      </form>
+      <button class="purchase" type="button">
+       <img src="img/korzina-b.png" alt="purchase" width="21" height="20"> Пусто
+      </button>
+      <table class="purchase-popup hidden">
+       <tr>
+        <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
+        <td><img src="img/1s-b.jpg" alt="icecream" width="33" height="33"></td>
+        <td>Пломбир с апельсиновым джемом</td>
+        <td>1,5 кг х <span>200 руб.</span></td>
+        <td>300 руб.</td>
+       </tr>
+       <tr>
+        <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
+        <td><img src="img/2s-b.jpg" alt="icecream" width="33" height="33"></td>
+        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+        <td>1,5 кг х <span>300 руб.</span></td>
+        <td>450 руб.</td>
+       </tr>
+       <tr>
+         <td class="bold" colspan="4">Итого: 750 руб. </td>
+       </tr>
+       <tr>
+         <td colspan="4"><button class="btn" type="submit">Оформить заказ</button> </td>
+       </tr>
+      </table>
+     </div>
     </div>
-    <div class="header-bottom-block">
+    <div class="header-bottom-block container">
      <p class="time">С 10 до 20, ежедневно <br><strong class="tel">8 812 450-25-25</strong></p>
        <div class="slider">
         <div class="slider-slide">
-         <img class="main-image" src="img/big-b.png" alt="icecream" width="1045" height="881">
          <div class="main-title">
           <h2 class="title">Крем брюле и пломбир<br> с малиновым джемом</h2>
          </div>
          <a href="#" class="btn"> Давайте оба! </a>
         </div>
         <div class="slider-slide hidden">
-         <img class="main-image" src="#" alt="" width="20" height="20">
          <div class="main-title">
           <h2 class="title">Крем брюле и пломбир<br> с малиновым джемом</h2>
          </div>
          <a href="#" class="btn">  Давайте оба!  </a>
         </div>
         <div class="slider-slide hidden">
-         <img class="main-image" src="#" alt="" width="20" height="20">
          <div class="main-title">
           <h2 class="title">Крем брюле и пломбир<br> с малиновым джемом</h2>
          </div>

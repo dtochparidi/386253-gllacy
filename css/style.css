@@ -45,6 +45,10 @@ body {
   font-size: 0px;
 }
 
+.flex {
+  display: flex;
+}
+
 .zero-ull .list {
   font-size: 16px;
 }
@@ -56,7 +60,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid red;
-  display: flex;
 }
 
 .hidden {
@@ -72,7 +75,7 @@ body {
   width: 154px;
 }
 
-.navigation {
+.main-navigation {
   outline: 1px solid red;
   width: 676px;
   margin-left: 24px;
@@ -82,4 +85,9 @@ body {
   outline: 1px solid red;
   width: 267px;
   margin-left: 26px;
+}
+
+.time {
+  outline: 1px solid red;
+  margin-left: 50%; 
 }
