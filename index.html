@@ -10,32 +10,36 @@
   <body>
    <header class="main-header">
     <div class="container">
-     <img class="main-logo" src="img/logo-b.png" alt="logo" width="154" height="64">
      <nav class="main-navigation">
-      <ul>
-        <li><a class="active" href="catalogue.html" title="catalogue">Каталог</a>
-         <ul>
-          <li><a href="#" title="#">Новинки</a></li>
-          <li><a href="#" title="#">Сливочное</a></li>
-          <li><a href="#" title="#">Щербеты</a></li>
-          <li><a href="#" title="#">Фруктовый лед</a></li>
-          <li><a href="#" title="#">Мелорин</a></li>
+      <div class=logo-container>
+       <a href="#"><img class="main-logo" src="img/logo-b.png" alt="logo" width="154" height="64"></a>
+      </div>
+      <div class="navigation">
+       <ul class="zero-ull">
+        <li class="list"><a class="active" href="catalogue.html" title="catalogue">Каталог</a>
+         <ul class="hidden">
+          <li class="list"><a href="#" title="#">Новинки</a></li>
+          <li class="list"><a href="#" title="#">Сливочное</a></li>
+          <li class="list"><a href="#" title="#">Щербеты</a></li>
+          <li class="list"><a href="#" title="#">Фруктовый лед</a></li>
+          <li class="list"><a href="#" title="#">Мелорин</a></li>
          </ul>
         </li>
-        <li><a href="#" title="">Доставка и оплата</a></li>
-        <li><a href="#" title="">О компании</a></li>
-      </ul>
+        <li class="list"><a href="#" title="">Доставка и оплата</a></li>
+        <li class="list"><a href="#" title="">О компании</a></li>
+       </ul>
+      </div>
       <div class="user-block">
        <button class=btn-search type="button">
         <img src="img/lupa-b.png" alt="search" width="17" height="17">
        </button>
-       <form class="search" action="#" method="post">
+       <form class="search hidden" action="#" method="post">
         <input type="text" name="search" value="Что ищем?">
        </form>
        <button class="btn-login" type="button">
         <img src="img/login-b.png" alt="login" width="21" height="19">Вход
        </button>
-       <form class="login-form" action="#" method="post">
+       <form class="login-form hidden" action="#" method="post">
         <input type="text" name="login" value="Электронная почта"><br>
         <input type="password" name="pass" value="Пароль"><br>
         <button class="btn" type="submit" name="enter">Войти</button>
@@ -45,7 +49,7 @@
        <button class="purchase" type="button">
         <img src="img/korzina-b.png" alt="purchase" width="21" height="20"> Пусто
        </button>
-       <table class="purchase-popup">
+       <table class="purchase-popup hidden">
         <tr>
          <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
          <td><img src="img/1s-b.jpg" alt="icecream" width="33" height="33"></td>
@@ -73,21 +77,21 @@
     <div class="header-bottom-block">
      <p class="time">С 10 до 20, ежедневно <br><strong class="tel">8 812 450-25-25</strong></p>
        <div class="slider">
-        <div class="slider-slide1">
+        <div class="slider-slide">
          <img class="main-image" src="img/big-b.png" alt="icecream" width="1045" height="881">
          <div class="main-title">
           <h2 class="title">Крем брюле и пломбир<br> с малиновым джемом</h2>
          </div>
          <a href="#" class="btn"> Давайте оба! </a>
         </div>
-        <div class="slider-slide2">
+        <div class="slider-slide hidden">
          <img class="main-image" src="#" alt="" width="20" height="20">
          <div class="main-title">
           <h2 class="title">Крем брюле и пломбир<br> с малиновым джемом</h2>
          </div>
          <a href="#" class="btn">  Давайте оба!  </a>
         </div>
-        <div class="slider-slide3">
+        <div class="slider-slide hidden">
          <img class="main-image" src="#" alt="" width="20" height="20">
          <div class="main-title">
           <h2 class="title">Крем брюле и пломбир<br> с малиновым джемом</h2>
@@ -116,31 +120,31 @@
       <a href="#" class="btn"> Хочу шоколадки! </a>
     </section>
      <div class="articles">
-      <article class="icecream-articles-1">
+      <article class="icecream-articles">
         <b class="hit">ХИТ</b>
         <img src="img/1-b.jpg" alt="310₽/кг" width="267" height="267">
-        <strong class="price">310₽<span>/кг</span></strong>
+        <b class="price">310₽<span class="kg">/кг</span></b>
         <a href="#"><p class="description">Сливочное с<br> апельсиновым джемом<br> и цитрусовой стружкой</p></a>
         <a class="btn" href="#" title="#"><b>Быстрый просмотр</b></a>
       </article>
-      <article class="icecream-articles-2">
+      <article class="icecream-articles">
         <b class="hit">ХИТ</b>
         <img src="img/2-b.jpg" alt="380₽/кг" width="267" height="267">
-        <strong class="price">380₽<span>/кг</span></strong>
+        <b class="price">380₽<span class="kg">/кг</span></b>
         <a href="#"><p class="description">Сливочно-кофейное с<br> кусочками шоколада</p></a>
         <a class="btn" href="#" title="#"><b>Быстрый просмотр</b></a>
       </article>
-      <article class="icecream-articles-3">
+      <article class="icecream-articles">
         <b class="hit">ХИТ</b>
         <img src="img/3-b.jpg" alt="355₽/кг" width="267" height="267">
-        <strong class="price">355₽<span>/кг</span></strong>
+        <b class="price">355₽<span class="kg">/кг</span></b>
         <a href="#"><p class="description">Сливочно-клубничное с<br> присыпкой из белого<br> шоколада</p></a>
         <a class="btn" href="#" title="#"><b>Быстрый просмотр</b></a>
       </article>
-      <article class="icecream-articles-4">
+      <article class="icecream-articles">
         <b class="hit">ХИТ</b>
         <img src="img/4-b.jpg" alt="415₽/кг" width="267" height="267">
-        <strong class="price">415₽<span>/кг</span></strong>
+        <b class="price">415₽<span class="kg">/кг</span></b>
         <a href="#"><p class="description">Сливочное крем-брюле<br> с карамельной<br> подливкой </p></a>
         <a class="btn" href="#" title="#"><b>Быстрый просмотр</b></a>
       </article>
@@ -213,4 +217,4 @@
 
 
   </body>
-</h
+</html>
