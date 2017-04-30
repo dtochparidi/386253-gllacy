@@ -13,9 +13,17 @@ body {
   font-weight: bold;
 }
 
-.main-title .title {
+.main-title{
   font-size: 60px;
   line-height: 60px;
+  text-align:center;
+  outline: 1px solid red;
+  flex: 0 0 100%;
+  order: -2;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 325px;
+  margin-bottom: 40px;
 }
 
 .left-block .title, .right-block .title {
@@ -26,6 +34,7 @@ body {
 .features .title {
   font-size: 24px;
   line-height: 30px;
+  margin: 0px;
 }
 
 .catalog-title {
@@ -38,14 +47,14 @@ body {
      clear: both;
 }
 
-.zero-ull {
+.main-header .ull{
   padding: 0px;
   margin: 0px;
   list-style-type: none;
   font-size: 0px;
 }
 
-.zero-ull .list {
+.main-header .ull .list{
   font-size: 16px;
 }
 
@@ -65,16 +74,22 @@ body {
 .main-header .container {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  min-height: 610px;
 }
 
-.main-navigation .list {
+.main-header .list {
   display: inline-block;
+  vertical-align: top;
 }
 
 
 .logo-container {
   outline: 1px solid red;
   width: 154px;
+  min-height: 64px;
+
 }
 
 .main-navigation {
@@ -87,9 +102,207 @@ body {
   outline: 1px solid red;
   width: 267px;
   margin-left: 26px;
+  flex-shrink:1;
 }
 
 .time {
   outline: 1px solid red;
   margin-left: auto;
+  flex: 0 0 100%;
+  text-align: right;
+  margin: 0px;
+}
+
+.slider {
+  flex: 0 0 100%;
+  outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content:  center;
+}
+
+.slider-radio {
+  outline: 1px solid red;
+  order: -1;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 21px;
+  width: 80px;
+
+}
+
+.slider-radio .list {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.slider .btn {
+  outline: 3px solid red;
+  margin-left: 355px;
+}
+
+.main .container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-block {
+  outline: 1px solid red;
+  margin-left: 20px;
+  width: 541px;
+}
+
+.left-block .btn {
+  display: flex;
+  justify-content: center;
+}
+
+.right-block {
+  outline: 1px solid red;
+  margin-left:  26px;
+  width: 541px;
+}
+
+.right-block .btn {
+  display: flex;
+  justify-content: center;
+}
+
+.articles {
+  outline: 1px solid red;
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  margin-top: 63px;
+}
+
+.icecream-articles {
+  outline: 1px solid red;
+}
+
+.hit {
+  display: none;
+}
+
+.price {
+  display: block;
+}
+
+.description {
+  text-align: center;
+}
+
+.icecream-articles .btn {
+  outline: 3px solid red;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  justify-content:  center;
+}
+
+.features {
+  outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1126px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 26px;
+}
+
+.features-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 541px;
+  margin-top: 8px;
+}
+
+.features-p {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 5px;
+  padding-top: 14px;
+}
+
+.blog {
+  outline: 1px solid red;
+  width: 540px;
+  padding-left: 20px;
+}
+
+.mail {
+  outline: 1px solid red;
+  width: 534px;
+  padding-left: 26px;
+  margin-left: 26px;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  outline: 1px solid red;
+  margin-left: auto;
+  flex: 0 0 100%;
+  margin-top: 40px;
+  margin-bottom: 19px;
+  min-height: 430px;
+}
+
+.map-contacts {
+  outline: 1px solid red;
+  width: 276px;
+  padding-left: 26px;
+  margin-left: auto;
+  margin-right: 25px;
+  min-height: 305px;
+}
+
+.main-footer .container {
+  display: flex;
+  min-height: 103px;
+}
+
+.social {
+  outline: 1px solid red;
+  width: 267px;
+  padding-top: 36px;
+}
+
+.social-item {
+  margin-right: 11px;
+}
+
+.about {
+  outline: 1px solid red;
+  display: flex;
+  width: 431px;
+  margin-left: 26px;
+  padding-left: 129px;
+  padding-top: 37px;
+}
+
+.row:nth-child(2) {
+  padding-left: 32px;
+}
+
+.row-item {
+ display: block;
+}
+
+.sign {
+  outline: 1px solid red;
+  width: 189px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 26px;
+  padding-top: 20px;
+  padding-left: 78px;
+}
+
+.main-header .root {
+  outline: 1px solid red;
+  display: inline-block;
+  vertical-align: top;
 }
