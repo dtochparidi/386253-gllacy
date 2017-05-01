@@ -183,10 +183,14 @@ body {
   padding-bottom: 20px;
   box-sizing: border-box;
   border-collapse: collapse;
+  font-size: 13px;
+  padding-left: 17px;
+  padding-top: 20px;
 }
 
-
-
+.purchase-popup .row {
+  outline: 1px solid red;
+}
 
 .time {
   outline: 1px solid red;
@@ -266,6 +270,8 @@ body {
 }
 
 .icecream-articles {
+  display: flex;
+  flex-direction: column;
   outline: 1px solid red;
   margin-top: 37px;
   width: 267px;
@@ -293,7 +299,8 @@ body {
   color: #252525;
   text-align: center;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 25px;
+  font-stretch: condensed;
 }
 
 .price {
@@ -316,16 +323,15 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 14px;
-  min-height:
 }
 
 .icecream-articles .btn {
   outline: 3px solid red;
-  display: inline-block;
-  text-align: center;
   display: flex;
-  justify-content:  center;
-  align-content: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: auto;
 }
 
 .features {
