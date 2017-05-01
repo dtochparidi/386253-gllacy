@@ -30,26 +30,30 @@
        </ul>
      </nav>
      <div class="user-block">
-      <button class=btn-search type="button">
+      <button class="btn-search btn" type="button">
        <img src="img/lupa-b.png" alt="search" width="17" height="17">
       </button>
       <form class="search hidden" action="#" method="post">
        <input type="text" name="search" value="Что ищем?">
       </form>
-      <button class="btn-login" type="button">
+      <button class="btn-login btn" type="button">
        <img src="img/login-b.png" alt="login" width="21" height="19">Вход
       </button>
       <form class="login-form hidden" action="#" method="post">
-       <input type="text" name="login" value="Электронная почта"><br>
-       <input type="password" name="pass" value="Пароль"><br>
-       <button class="btn" type="submit" name="enter">Войти</button>
-       <a href="#" title="#">Забыли пароль ? </a><br>
-       <a href="#" title="#">Новая регистрация</a>
+        <div class="input">
+         <input class="text" type="text" name="login" value="Электронная почта"><br>
+         <input class="password" type="password" name="pass" value="Пароль"><br>
+        </div>
+        <button class="btn" type="submit" name="enter">Войти</button>
+        <div class="login-form-a">
+         <a href="#" title="#">Забыли пароль ? </a><br>
+         <a href="#" title="#">Новая регистрация</a>
+        </div>
       </form>
-      <button class="purchase" type="button">
+      <button class="purchase btn" type="button">
        <img src="img/korzina-b.png" alt="purchase" width="21" height="20"> Пусто
       </button>
-      <table class="purchase-popup hidden">
+      <table class="purchase-popup">
        <tr>
         <td><button class="close" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button></td>
         <td><img src="img/1s-b.jpg" alt="icecream" width="33" height="33"></td>
@@ -99,28 +103,28 @@
      <div class="articles">
       <article class="icecream-articles">
         <b class="hit">ХИТ</b>
-        <img src="img/1-b.jpg" alt="310₽/кг" width="267" height="267">
+        <img class="article-img" src="img/1-b.jpg" alt="310₽/кг" width="267" height="267">
         <b class="price">310₽<span class="kg">/кг</span></b>
         <a href="#"><p class="description">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</p></a>
         <a class="btn" href="#" title="#">Быстрый просмотр</a>
       </article>
       <article class="icecream-articles">
         <b class="hit">ХИТ</b>
-        <img src="img/2-b.jpg" alt="380₽/кг" width="267" height="267">
+        <img class="article-img" src="img/2-b.jpg" alt="380₽/кг" width="267" height="267">
         <b class="price">380₽<span class="kg">/кг</span></b>
         <a href="#"><p class="description">Сливочно-кофейное с кусочками<br> шоколада</p></a>
         <a class="btn" href="#" title="#">Быстрый просмотр</a>
       </article>
       <article class="icecream-articles">
         <b class="hit">ХИТ</b>
-        <img src="img/3-b.jpg" alt="355₽/кг" width="267" height="267">
+        <img class="article-img" src="img/3-b.jpg" alt="355₽/кг" width="267" height="267">
         <b class="price">355₽<span class="kg">/кг</span></b>
         <a href="#"><p class="description">Сливочно-клубничное с<br> присыпкой из белого шоколада</p></a>
         <a class="btn" href="#" title="#">Быстрый просмотр</a>
       </article>
       <article class="icecream-articles">
         <b class="hit">ХИТ</b>
-        <img src="img/4-b.jpg" alt="415₽/кг" width="267" height="267">
+        <img class="article-img" src="img/4-b.jpg" alt="415₽/кг" width="267" height="267">
         <b class="price">415₽<span class="kg">/кг</span></b>
         <a href="#"><p class="description">Сливочное крем-брюле с<br> карамельной подливкой </p></a>
         <a class="btn" href="#" title="#">Быстрый просмотр</a>

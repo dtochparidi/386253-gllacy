@@ -9,6 +9,14 @@ body {
   margin: 0px;
 }
 
+.btn {
+  padding: 0px;
+  margin: 0px;
+  outline: 0px;
+  color: #ffffff;
+
+}
+
 .title {
   font-weight: bold;
 }
@@ -39,6 +47,9 @@ body {
 
 .catalog-title {
   font-size: 35px;
+  outline: 1px solid red;
+  margin: 0px;
+  margin-top: 5px;
 }
 
 .clearfix::after {
@@ -47,14 +58,14 @@ body {
      clear: both;
 }
 
-.main-header .ull{
+.main-header .ull, .main .ull{
   padding: 0px;
   margin: 0px;
   list-style-type: none;
   font-size: 0px;
 }
 
-.main-header .ull .list{
+.main-header .ull .list, .main .ull .list{
   font-size: 16px;
 }
 
@@ -67,16 +78,12 @@ body {
   outline: 1px solid red;
 }
 
-.hidden {
-  display: none;
-}
-
 .main-header .container {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
-  min-height: 610px;
+  position: relative;
 }
 
 .main-header .list {
@@ -89,7 +96,10 @@ body {
   outline: 1px solid red;
   width: 154px;
   min-height: 64px;
+}
 
+.main-logo {
+  display: block;
 }
 
 .main-navigation {
@@ -104,6 +114,79 @@ body {
   margin-left: 26px;
   flex-shrink:1;
 }
+
+.btn-search {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-login {
+  width: 92px;
+  height: 32px;
+}
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 258px;
+  position: absolute;
+  right: 250px;
+  background: #f8f7f4;
+  padding-left: 19px;
+  padding-top: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.login-form-input {
+  width: 241px;
+}
+
+.text {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+}
+
+.password {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+}
+
+.login-form .btn {
+  margin-right: 21px;
+  width: 100px;
+}
+
+.login-form-a {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.purchase {
+  width: 117px;
+  height: 32px;
+}
+
+.purchase-popup {
+  width: 540px;
+  position: absolute;
+  right: 250px;
+  background: #f8f7f4;
+  color: #323232;
+  padding-left: 17px;
+  padding-top: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+
+
 
 .time {
   outline: 1px solid red;
@@ -122,13 +205,15 @@ body {
 }
 
 .slider-radio {
+  position: absolute;
+  bottom: 0;
+  left: 26;
   outline: 1px solid red;
   order: -1;
   margin: 0px;
   padding: 0px;
   padding-top: 21px;
   width: 80px;
-
 }
 
 .slider-radio .list {
@@ -139,7 +224,8 @@ body {
 
 .slider .btn {
   outline: 3px solid red;
-  margin-left: 355px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main .container {
@@ -174,24 +260,63 @@ body {
   outline: 1px solid red;
   display: flex;
   flex: 0 0 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 63px;
 }
 
 .icecream-articles {
   outline: 1px solid red;
+  margin-top: 37px;
+  width: 267px;
+  position: relative;
+}
+
+.icecream-articles:nth-child(-n+4) {
+  margin-top: 0px;
+}
+
+.article-img {
+  display: block;
+  border-radius: 200px;
 }
 
 .hit {
-  display: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 61px;
+  height: 61px;
+  background: white;
+  border-radius: 100px;
+  color: #252525;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
 }
 
 .price {
   display: block;
+  position: absolute;
+  left: 0;
+  top: 216px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.kg {
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .description {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  margin-top: 14px;
+  min-height:
 }
 
 .icecream-articles .btn {
@@ -200,6 +325,7 @@ body {
   text-align: center;
   display: flex;
   justify-content:  center;
+  align-content: flex-end;
 }
 
 .features {
@@ -230,6 +356,7 @@ body {
   outline: 1px solid red;
   width: 540px;
   padding-left: 20px;
+  min-height: 220px;
 }
 
 .mail {
@@ -237,6 +364,7 @@ body {
   width: 534px;
   padding-left: 26px;
   margin-left: 26px;
+  min-height: 220px;
 }
 
 .map {
@@ -301,8 +429,92 @@ body {
   padding-left: 78px;
 }
 
+.sub-menu {
+  flex: 0 0 100%;
+}
+
 .main-header .root {
   outline: 1px solid red;
+  flex: 0 0 100%;
+}
+
+.pages {
+  outline: 1px solid red;
+  flex:0 0 100%;
+  text-align: right;
+}
+
+.main .ull .list {
   display: inline-block;
   vertical-align: top;
+  padding-right: 20px;
+}
+
+.filter {
+  outline: 1px solid red;
+  width: 879px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-particle {
+  outline: 1px solid red;
+  margin-right: 12px;
+}
+
+.filter-fieldset {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.filter-fieldset:first-child {
+  outline: 1px solid red;
+  width: 193px;
+  margin-right: 15px;
+}
+
+.ruller-block {
+  outline: 1px solid red;
+  width: 218px;
+  margin-right: 15px;
+}
+
+.ruller-p {
+  margin: 0px;
+}
+
+.filter .ruller {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-fieldset:nth-child(3) {
+  outline: 1px solid red;
+  width: 415px;
+}
+
+.filter-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-fieldset:nth-child(4) {
+  outline: 1px solid red;
+  width: 702px;
+  margin-right: 15px;
+  margin-top: 16px;
+}
+
+.filter-button {
+  margin-top: 15px;
+  height: 44px;
+  width: 100px;
+}
+
+.hidden {
+  display: none;
 }
