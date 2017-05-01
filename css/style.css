@@ -173,6 +173,7 @@ body {
 
 .purchase-popup {
   width: 540px;
+  display: block;
   position: absolute;
   right: 250px;
   background: #f8f7f4;
@@ -188,8 +189,35 @@ body {
   padding-top: 20px;
 }
 
-.purchase-popup .row {
+.purchase-popup .tr {
   outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.td {
+  margin-right: 15px;
+}
+
+.final {
+  margin-left: auto;
+}
+
+.last {
+  margin-left: auto;
+}
+
+.purchase-popup .tr:last-child {
+  margin-bottom: 0px;
+}
+
+.purchase-img {
+  display: block;
+  border-radius: 150px;
 }
 
 .time {
@@ -198,6 +226,9 @@ body {
   flex: 0 0 100%;
   text-align: right;
   margin: 0px;
+  position: absolute;
+  right: 27px;
+  top: 74px;
 }
 
 .slider {
