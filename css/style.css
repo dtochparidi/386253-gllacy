@@ -49,7 +49,8 @@ body {
   font-size: 35px;
   outline: 1px solid red;
   margin: 0px;
-  margin-top: 5px;
+  margin-top: 13px;
+  flex-grow: 1;
 }
 
 .clearfix::after {
@@ -108,11 +109,24 @@ body {
   margin-left: 24px;
 }
 
+.main-navigation .ull {
+  outline: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.main-navigation .ull .list {
+  margin-right: 30px;
+}
+
 .user-block {
   outline: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
   width: 267px;
   margin-left: 26px;
-  flex-shrink:1;
 }
 
 .btn-search {
@@ -228,7 +242,7 @@ body {
   margin: 0px;
   position: absolute;
   right: 27px;
-  top: 74px;
+  top: 73px;
 }
 
 .slider {
@@ -468,11 +482,20 @@ body {
 
 .sub-menu {
   flex: 0 0 100%;
+  margin-top: 27px;
 }
 
 .main-header .root {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
   outline: 1px solid red;
-  flex: 0 0 100%;
+  flex-grow: 1;
+}
+
+.main-header .root .list {
+  margin-right: 10px;
 }
 
 .pages {
