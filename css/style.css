@@ -84,7 +84,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
   position: relative;
 }
 
@@ -278,8 +277,12 @@ body {
   margin-right: auto;
 }
 
-.main .container {
+.main-index {
   margin-top: 60px;
+}
+
+.main-catalogue {
+
 }
 
 .block-container {
@@ -505,6 +508,11 @@ body {
   padding-left: 78px;
 }
 
+.sub-menu-container {
+  outline: 2px solid red;
+}
+
+
 .sub-menu {
   flex: 0 0 100%;
   margin-top: 27px;
@@ -540,6 +548,7 @@ body {
   width: 879px;
   padding: 0px;
   margin: 0px;
+  margin-top: 26px;
   border: 0px;
   display: flex;
   flex-wrap: wrap;
