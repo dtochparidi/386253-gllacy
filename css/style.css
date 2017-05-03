@@ -432,12 +432,25 @@ body {
 .map {
   display: flex;
   align-items: center;
+  margin-top: 62px;
+  min-height: 430px;
   outline: 1px solid red;
-  margin-left: auto;
   flex: 0 0 100%;
   margin-top: 40px;
   margin-bottom: 19px;
-  min-height: 430px;
+  background-image: url(../img/map-b.jpg);
+  background-color: #f7f1d9;
+  background-position: center;
+}
+
+.map-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+  width: 1146px;
+  padding-right: 27px;
+  padding-left: 27px;
 }
 
 .map-contacts {
@@ -448,18 +461,6 @@ body {
   min-height: 305px;
   background-color: #fefefd;
   color: #323232;
-}
-
-.map-background {
-  position: absolute;
-  z-index: -1;
-  top: 1787px;
-  left: 0;
-  height: 430px;
-  width: 100%;
-  background-image: url(../img/map-b.jpg);
-  background-color: #f7f1d9;
-  background-position: center;
 }
 
 .main-footer .container {
