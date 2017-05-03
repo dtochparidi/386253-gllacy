@@ -9,10 +9,23 @@ body {
   margin: 0px;
 }
 
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #ffbc9e;
+}
+
+a:active {
+  color: #ffbc9e;
+}
+
 .btn {
   padding: 0px;
   margin: 0px;
   outline: 0px;
+  border: 0px;
   color: #ffffff;
 
 }
@@ -101,12 +114,17 @@ body {
 
 .main-logo {
   display: block;
+  margin-top: 9px;
 }
 
 .main-navigation {
   outline: 1px solid red;
   width: 675px;
   margin-left: 24px;
+  color: white;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .main-navigation .ull {
@@ -114,6 +132,8 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 31px;
+  color: white;
 }
 
 .main-navigation .ull .list {
@@ -129,20 +149,77 @@ body {
   margin-left: 26px;
 }
 
+.user-block > .btn {
+  background-color: #9db1a6;
+  border-radius: 50px;
+  margin-top: 23px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.user-block > .btn:hover {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.navi-btn {
+  background-color: #9db1a6;
+  border-radius: 50px;
+}
+
 .btn-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.btn-search::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/sprite.png);
+  background-position: -74px -188px;
+}
+
+.btn-search:hover::before {
+  background-position: -91px -188px;
 }
 
 .btn-login {
-  width: 92px;
+  display: flex;
+  align-items: center;
+  min-width: 92px;
   height: 32px;
+  margin-right: 10px;
+  padding-left: 45px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.btn-login:hover::before {
+  background-position: -21px -344px;
+  background-position: -32px -168px;
+}
+
+.btn-login::before {
+  content: "";
+  width: 21px;
+  height: 19px;
+  position: absolute;
+  right: 55px;
+  background-image: url(../img/sprite.png);
+  background-position: -53px -188px;
 }
 
 .login-form {
   display: flex;
   flex-wrap: wrap;
-  width: 258px;
+  min-width: 258px;
   position: absolute;
   right: 250px;
   background: #f8f7f4;
@@ -181,8 +258,27 @@ body {
 }
 
 .purchase {
-  width: 117px;
+  display: flex;
+  align-items: center;
+  min-width: 117px;
   height: 32px;
+  padding-left: 45px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.purchase::before {
+  content: "";
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  right: 80px;
+  background-image: url(../img/sprite.png);
+  background-position: -53px -168px;
+}
+
+.purchase:hover::before {
+  background-position: -32px -187px;
 }
 
 .purchase-popup {
@@ -282,7 +378,7 @@ body {
 }
 
 .main-catalogue {
-
+  margin-top:  26px;
 }
 
 .block-container {
@@ -515,7 +611,7 @@ body {
 
 .sub-menu {
   flex: 0 0 100%;
-  margin-top: 27px;
+
 }
 
 .main-header .root {
