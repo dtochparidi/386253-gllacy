@@ -37,6 +37,7 @@ body {
 .left-block .title, .right-block .title {
   font-size: 35px;
   line-height: 41px;
+  margin-top: 0px;
 }
 
 .features .title {
@@ -279,14 +280,19 @@ body {
 
 .main .container {
   margin-top: 60px;
+}
+
+.block-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .left-block {
   outline: 1px solid red;
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
   width: 541px;
+  box-sizing: border-box;
 }
 
 .left-block .btn {
@@ -296,8 +302,10 @@ body {
 
 .right-block {
   outline: 1px solid red;
-  margin-left:  26px;
+  padding-left:  26px;
+  padding-top: 20px;
   width: 541px;
+  box-sizing: border-box;
 }
 
 .right-block .btn {
@@ -310,7 +318,6 @@ body {
   display: flex;
   flex: 0 0 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 63px;
 }
 
@@ -319,12 +326,17 @@ body {
   flex-direction: column;
   outline: 1px solid red;
   margin-top: 37px;
-  width: 267px;
+  margin-right: 26px;
+  flex-basis: 267px;
   position: relative;
 }
 
 .icecream-articles:nth-child(-n+4) {
   margin-top: 0px;
+}
+
+.icecream-articles:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .article-img {
@@ -383,7 +395,6 @@ body {
   outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
-  width: 1126px;
   padding-left: 20px;
   margin-bottom: 40px;
   margin-top: 26px;
@@ -434,8 +445,21 @@ body {
   width: 276px;
   padding-left: 26px;
   margin-left: auto;
-  margin-right: 25px;
   min-height: 305px;
+  background-color: #fefefd;
+  color: #323232;
+}
+
+.map-background {
+  position: absolute;
+  z-index: -1;
+  top: 1787px;
+  left: 0;
+  height: 430px;
+  width: 100%;
+  background-image: url(../img/map-b.jpg);
+  background-color: #f7f1d9;
+  background-position: center;
 }
 
 .main-footer .container {

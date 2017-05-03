@@ -90,16 +90,18 @@
    </header>
    <main class="main">
     <div class="container">
-     <section class="left-block">
-      <h3 class="title">Малинка даром</h3>
-      <p>При покупке 2 кг любого фруктового мороженного, добавим <br> в ваш заказ банку малинового варенья бесплатно</p>
-      <a href="#" class="btn">  Хочу варенье! </a>
-    </section>
-     <section class="right-block">
-      <h3 class="title">Шоколад даром!</h3>
-      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br> вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-      <a href="#" class="btn"> Хочу шоколадки! </a>
-    </section>
+     <div class="block-container">
+      <section class="left-block">
+       <h3 class="title">Малинка даром</h3>
+       <p>При покупке 2 кг любого фруктового мороженного, добавим <br> в ваш заказ банку малинового варенья бесплатно</p>
+       <a href="#" class="btn">  Хочу варенье! </a>
+      </section>
+      <section class="right-block">
+       <h3 class="title">Шоколад даром!</h3>
+       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br> вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+       <a href="#" class="btn"> Хочу шоколадки! </a>
+      </section>
+     </div>
      <div class="articles">
       <article class="icecream-articles">
         <b class="hit">ХИТ</b>
@@ -154,18 +156,19 @@
        который не дает мороженому<br> растаять в пути и позволяет сохранить превосходный вкус.</p>
       </div>
      </section>
-     <div class="blog">
-      <p>Новое в нашем блоге</p>
-      <a href="#">10 способов сервировки <br> фруктовых щербетов к<br> столу </a>
-     </div>
-     <form class="mail" action="fdf" method="get">
-      <p>Подпишитесь на нашу сладкую рассылку <br>
-         и будете всегда в курсе всего самого вкусного, что у нас происходит.<br>
-         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      <input type="text" name="mail" value="Электронная почта">
-      <button class="btn" type="submit" name="mail-submit">  Отправить </button>
-     </form>
-    </div>
+     <div class="block-container">
+      <div class="blog">
+       <p>Новое в нашем блоге</p>
+       <a href="#">10 способов сервировки <br> фруктовых щербетов к<br> столу </a>
+      </div>
+      <form class="mail" action="fdf" method="get">
+       <p>Подпишитесь на нашу сладкую рассылку <br>
+          и будете всегда в курсе всего самого вкусного, что у нас происходит.<br>
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+       <input type="text" name="mail" value="Электронная почта">
+       <button class="btn" type="submit" name="mail-submit">  Отправить </button>
+      </form>
+     </div>  
      <div class="map">
       <section class="map-contacts">
        <p>Адрес главного офиса <br> и офлайн магазина:<br><span> ул. Большая Конюшенная <br>19/8, Санкт-Петербург</span></p>
@@ -181,6 +184,8 @@
        </form>
       </section>
      </div>
+     <div class="map-background clearfix"></div>
+    </div>
    </main>
    <footer class="main-footer">
     <div class="container">
