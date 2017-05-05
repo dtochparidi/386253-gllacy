@@ -40,7 +40,7 @@
       </form>
       <button class="btn-login btn-s" type="button">Вход
       </button>
-      <form class="login-form" action="#" method="post">
+      <form class="login-form hidden" action="#" method="post">
         <input class="text" type="text" name="login" value="Электронная почта"><br>
         <input class="password" type="password" name="pass" value="Пароль"><br>
         <button class="btn" type="submit" name="enter">Войти</button>
@@ -84,7 +84,9 @@
        <nav class="sub-menu">
         <ul class="root ull">
          <li class="list"><a href="index.html" title="Главная">Главная</a></li>
+         <li>&#187;</li>
          <li class="list"><a href="#" title="#">Каталог</a></li>
+         <li>&#187;</li>
          <li class="nonactive list"><a href="#" title="#">Сливочное</a></li>
         </ul>
        </nav>
@@ -101,7 +103,7 @@
          </ull>
         </select>
       </fieldset>
-       <div class="ruller-block">
+       <div class="filter-fieldset ruller-block">
         <p class="ruller-p">Цена 100 руб. - 500 руб.</p>
         <div class="ruller">
          <span class="ruller-button">1</span>
@@ -121,11 +123,26 @@
        <fieldset class="filter-fieldset">
          <legend class="form-legend">Наполнители:</legend>
          <ul class="filter-item ull">
-          <li class="list"><label><input class="form-particle" type="checkbox" name="check" value="chock">шоколадные </label></li>
-          <li class="list"><label><input class="form-particle" type="checkbox" name="check" value="sugar">сахарные присыпки </label></li>
-          <li class="list"><label><input class="form-particle" type="checkbox" name="check" value="fruct">фрукты </label></li>
-          <li class="list"><label><input class="form-particle" type="checkbox" name="check" value="syrop">сиропы </label></li>
-          <li class="list"><label><input class="form-particle" type="checkbox" name="check" value="jam">джемы </label></li>
+          <li class="list">
+            <input class="form-particle" type="checkbox" name="check" value="chock" id="chock">
+            <label for="chock">шоколадные </label>
+          </li>
+          <li class="list">
+            <input class="form-particle" type="checkbox" name="check" value="sugar" id="sugar">
+            <label for="sugar">сахарные присыпки </label>
+          </li>
+          <li class="list">
+            <input class="form-particle" type="checkbox" name="check" value="fruct" id="fruct">
+            <label for="fruct">фрукты </label>
+          </li>
+          <li class="list">
+            <input class="form-particle" type="checkbox" name="check" value="syrop" id="syrop">
+            <label for="syrop">сиропы </label>
+          </li>
+          <li class="list">
+            <input class="form-particle" type="checkbox" name="check" value="jam" id="jam">
+            <label for="jam">джемы </label>
+          </li>
         </ul>
        </fieldset>
        <button class="filter-button btn" type="submit" name="sub">Применить</button>
@@ -194,13 +211,13 @@
      </div>
      <nav class="pages">
        <ul class="ull">
-         <li class="list"><a href="#">   </a></li>
-         <li class="list"><a href="#"> 1 </a></li>
-         <li class="list"><a href="#"> 2 </a></li>
-         <li class="list"><a href="#"> 3 </a></li>
-         <li class="list"><a href="#"> 4 </a></li>
-         <li class="list"><a href="#"> 5 </a></li>
-         <li class="list"><a href="#">   </a></li>
+         <li class="list"><a class="pages-a disables" href="#">&lt;</a></li>
+         <li class="list"><a class="pages-a pages-active a-black" href="#"> 1 </a></li>
+         <li class="list"><a class="pages-a" href="#">2</a></li>
+         <li class="list"><a class="pages-a" href="#">3</a></li>
+         <li class="list"><a class="pages-a" href="#">4</a></li>
+         <li class="list"><a class="pages-a" href="#">5</a></li>
+         <li class="list"><a class="pages-a" href="#">&gt;</a></li>
        </ul>
 
      </nav>
@@ -209,10 +226,10 @@
    <footer class="main-footer">
     <div class="container">
      <div class="social">
-        <a class="social-item" href="#"><img src="#" alt="" width="20" height="20"></a>
-        <a class="social-item" href="#"><img src="#" alt="" width="20" height="20"></a>
-        <a class="social-item" href="#"><img src="#" alt="" width="20" height="20"></a>
-        <a class="social-item" href="#"><img src="#" alt="" width="20" height="20"></a>
+        <a class="social-item" href="#"></a>
+        <a class="social-item" href="#"></a>
+        <a class="social-item" href="#"></a>
+        <a class="social-item" href="#"></a>
      </div>
      <div class="about">
        <div class="row">
@@ -225,10 +242,8 @@
       </div>
      </div>
      <div class="sign">
-      <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy">
-        <img src="img/academy-b.png" alt="html-academy" width="108" height="38">
-      </a>
-      <p>Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"> <span> HTML Academy </span> </a>2016</p>
+      <a class="sign-academy" href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"></a>
+      <p class="sign-text">Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"> <span> HTML Academy </span> </a>2016</p>
      </div>
     </div>
    </footer>

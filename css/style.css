@@ -53,6 +53,29 @@ input:focus {
   outline: none;
 }
 
+textarea {
+  border: 1px solid #d3d3d2;
+  color: #999999;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 14px;
+  padding-top: 14px;
+  border-radius: 5px;
+}
+
+textarea:hover {
+  border: 2px solid #9a9a9a;
+  padding-left: 13px;
+  padding-top: 13px;
+}
+
+textarea:focus {
+  border: 2px solid #2e88e4;
+  padding-left: 13px;
+  padding-top: 13px;
+  outline: none;
+}
+
 .background::after {
   content: "";
   width: 1045px;
@@ -549,6 +572,7 @@ input:focus {
 
 .main-index {
   margin-top: 60px;
+  position: relative;
 }
 
 .main-catalogue {
@@ -570,6 +594,10 @@ input:focus {
 }
 
 .left-block, .right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   outline: 1px solid red;
   padding-left: 20px;
   padding-top: 18px;
@@ -591,13 +619,16 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 165px;
+  align-self: flex-end;
+  min-width: 165px;
   height: 45px;
   margin-left: auto;
   font-size: 18px;
   line-height: 24px;
   margin-top: 43px;
   margin-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 
@@ -679,6 +710,7 @@ input:focus {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.3);
 }
 
 .kg {
@@ -862,15 +894,19 @@ input:focus {
   height: 45px;
   margin-right: 12px;
   box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .mail .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 129px;
   height: 44px;
   font-size: 18px;
   line-height: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 .map {
@@ -895,6 +931,7 @@ input:focus {
   width: 1146px;
   padding-right: 27px;
   padding-left: 27px;
+  position: relative;
 }
 
 .map-contacts {
@@ -947,7 +984,10 @@ input:focus {
   font-weight: bold;
 }
 
-.map-contacts .btn {
+.map-contacts > .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   min-width: 250px;
   padding-left: 10px;
@@ -957,24 +997,127 @@ input:focus {
   box-sizing: border-box;
 }
 
+.feedback-container {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 477px;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 19px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 27px;
+  border-radius: 20px;
+  background-color: #f8f7f4;
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.feedback-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+.feedback-input {
+  width: 266px;
+  height: 44px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.feedback-textarea {
+  height: 155px;
+  width: 428px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.map .feedback .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  min-width: 137px;
+  height: 44px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .main-footer .container {
   display: flex;
+  justify-content: flex-start;
   min-height: 103px;
+  position: relative;
+  border-top: 2px solid #a9bbb1;
 }
 
 .social {
   outline: 1px solid red;
   width: 267px;
-  padding-top: 36px;
+  position: relative;
 }
 
-.social-item {
-  margin-right: 11px;
+.social-item::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/sprite.png);
+}
+
+.social .social-item:nth-child(1)::after {
+  background-position: -64px -136px;
+  position: absolute;
+  top: 36px;
+  left: 0px;
+}
+
+.social .social-item:nth-child(2)::after {
+  background-position: -32px -136px;
+  position: absolute;
+  top: 36px;
+  left: 50px;
+}
+
+.social .social-item:nth-child(3)::after {
+  background-position: -0px -136px;
+  position: absolute;
+  top: 36px;
+  left: 99px;
+}
+
+.social .social-item:nth-child(4)::after {
+  background-position: -0px -168px;
+  position: absolute;
+  top: 36px;
+  left: 148px;
 }
 
 .about {
   outline: 1px solid red;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 431px;
   margin-left: 26px;
   padding-left: 129px;
@@ -986,6 +1129,7 @@ input:focus {
 }
 
 .row-item {
+ outline: 1px solid red;
  display: block;
 }
 
@@ -995,18 +1139,40 @@ input:focus {
   font-size: 12px;
   line-height: 18px;
   margin-left: 26px;
-  padding-top: 20px;
   padding-left: 78px;
+  padding-top: 62px;
+  position: relative;
 }
+
+.sign-academy::before {
+  content: "";
+  width: 108px;
+  height: 38px;
+  background-image: url(../img/sprite.png);
+  background-position: -0px -0px;
+  position: absolute;
+  top: 19px;
+  left: 79px;
+}
+
+.sign-text {
+  padding: 0px;
+  margin: 0px;
+}
+
 
 .sub-menu-container {
   outline: 2px solid red;
 }
 
-
-.sub-menu {
+.sub-menu .ull {
   flex: 0 0 100%;
+  display: flex;
+  justify-content: flex-start;
+}
 
+.sub-menu .list {
+  margin-right: 8px;
 }
 
 .main-header .root {
@@ -1024,14 +1190,54 @@ input:focus {
 
 .pages {
   outline: 1px solid red;
-  flex:0 0 100%;
+  display: flex;
+  justify-content: flex-end;
+  outline: 1px solid red;
   text-align: right;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-top: 39px;
+  margin-bottom: 30px;
 }
 
-.main .ull .list {
-  display: inline-block;
-  vertical-align: top;
-  padding-right: 20px;
+.pages .ull {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pages .ull .list {
+  display: flex;
+  outline: 1px solid red;
+  margin-right: 20px;
+}
+
+.pages .ull .list:last-child {
+  margin-right: 0px;
+}
+
+.pages .ull .pages-active {
+  outline: 1px solid red;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.pages-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 26px;
+  height: 26px;
+  text-decoration: none;
+}
+
+.pages .ull .list:last-child {
+  padding-right: 0px;
+}
+
+.disabled {
 }
 
 .filter {
@@ -1054,6 +1260,10 @@ input:focus {
   margin: 0px;
   padding: 0px;
   border: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .filter-fieldset:first-child {

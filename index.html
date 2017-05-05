@@ -163,14 +163,15 @@
         <p class="contacts-text-1">Адрес главного офиса <br> и офлайн магазина:<br><span class="map-adress"> ул. Большая Конюшенная <br>19/8, Санкт-Петербург</span></p>
         <p class="contacts-text-2">Для заказов по телефону:<br> <strong class="map-tel">8 812 450-25-25</strong><br>(с 10 до 20 ежедневно)</p>
         <button class="btn">Форма обратной связи</button>
-        <form class="feedback hidden" action="abc" method="post">
-         <fieldset>
-          <legend>Мы обязательно вам ответим!</legend>
-          <input type="text" name="name" value="Как вас зовут?">
-          <input type="text" name="mail" value="Ваша почта для ответа?">
-          <textarea class="textarea" name="somthing">Напишите что нибудь...</textarea>
-         </fieldset>
-        </form>
+        <div class="feedback-container hidden">
+         <form class="feedback" action="abc" method="post">
+          <legend class="feedback-title">Мы обязательно вам ответим!</legend>
+          <input class="feedback-input" type="text" name="name" value="Как вас зовут ?">
+          <input class="feedback-input" type="text" name="mail" value="Ваша почта для ответа ?">
+          <textarea class="feedback-textarea" name="somthing">Напишите что нибудь...</textarea>
+          <button class="btn" name="feedback">Отправить</button>
+         </form>
+        </div>
        </section>
       </div>
      </div>
@@ -178,10 +179,10 @@
    <footer class="main-footer">
     <div class="container">
      <div class="social">
-        <a class="social-item" href="#"><img src="img/serdce-b.png" alt="heart" width="15" height="13"></a>
-        <a class="social-item" href="#"><img src="#" alt="" width="20" height="20"></a>
-        <a class="social-item" href="#"><img src="#" alt="" width="20" height="20"></a>
-        <a class="social-item" href="#"><img src="#" alt="" width="20" height="20"></a>
+        <a class="social-item" href="#"></a>
+        <a class="social-item" href="#"></a>
+        <a class="social-item" href="#"></a>
+        <a class="social-item" href="#"></a>
      </div>
      <div class="about">
       <div class="row">
@@ -194,10 +195,8 @@
      </div>
      </div>
      <div class="sign">
-      <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy">
-        <img src="img/academy-b.png" alt="html-academy" width="108" height="38">
-      </a>
-      <p>Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"> <span> HTML Academy </span> </a>2016</p>
+      <a class="sign-academy" href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"></a>
+      <p class="sign-text">Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"> <span> HTML Academy </span> </a>2016</p>
      </div>
     </div>
    </footer>
