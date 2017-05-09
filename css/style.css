@@ -9,6 +9,9 @@ body {
   margin: 0px;
 }
 
+.catalogue-page {
+}
+
 a {
   color: #ffffff;
 }
@@ -1482,7 +1485,6 @@ textarea:focus {
   height: 36px;
   box-sizing: border-box;
   position: relative;
-  padding-left: 16px;
   padding-right: 16px;
   outline: 1px solid red;
   padding-left: 46px;
@@ -1553,6 +1555,56 @@ textarea:focus {
 .filter .select:hover, .filter .select-container:hover {
   background-color: white;
   color: #323232;
+}
+
+.ruller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 36px;
+  background-color: #a9bab0;
+  border-radius: 20px;
+}
+
+.ruller-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 188px;
+  height: 4px;
+  background-color: #d1dad3;
+  position: relative;
+}
+
+.ruller-fillline {
+  width: 100%;
+  height: 4px;
+  background-color: #f8f7f4;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.ruller-min {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #f8f7f4;
+  position: absolute;
+  left: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.ruller-max {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #f8f7f4;
+  position: absolute;
+  right: 20px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .radio-fake {
