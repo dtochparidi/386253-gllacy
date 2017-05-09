@@ -82,9 +82,9 @@
        <nav class="sub-menu">
         <ul class="root ull">
          <li class="list"><a href="index.html" title="Главная">Главная</a></li>
-         <li>&#187;</li>
+         <li class="list">&raquo;</li>
          <li class="list"><a href="#" title="#">Каталог</a></li>
-         <li>&#187;</li>
+         <li class="list">&raquo;</li>
          <li class="nonactive list"><a href="#" title="#">Сливочное</a></li>
         </ul>
        </nav>
@@ -93,13 +93,15 @@
       <form class="filter" method="get" action="abc">
        <fieldset class="filter-fieldset">
         <legend class="form-legend"> Сортировка: </legend>
-        <select class="filter-item select" name="select">
-         <ull class="ull">
-          <li class="list"><option value="favorite">По популярности</option></li>
-          <li class="list"><option value="#"></option></li>
-          <li class="list"><option value="#">#</option></li>
-         </ull>
-        </select>
+        <div class="select-container">
+         <select class="filter-item select" name="select">
+          <ull class="ull">
+           <li class="list"><option value="favorite">По популярности</option></li>
+           <li class="list"><option value="#"></option></li>
+           <li class="list"><option value="#">#</option></li>
+          </ull>
+         </select>
+        </div> 
        </fieldset>
        <div class="filter-fieldset ruller-block">
         <p class="ruller-p">Цена 100 руб. - 500 руб.</p>
