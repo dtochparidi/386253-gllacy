@@ -52,7 +52,7 @@ input:hover {
 }
 
 input:focus {
-  border: 2px solid s#2e88e4;
+  border: 2px solid #2e88e4;
   padding-left: 13px;
   outline: none;
   line-height: 24px;
@@ -688,14 +688,14 @@ textarea:focus {
 }
 
 .slider-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   position: absolute;
   bottom: 0;
   left: 26;
   width: 79px;
   outline: 1px solid red;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin: 0px;
   padding: 0px;
   height: 45px;
@@ -1131,7 +1131,6 @@ textarea:focus {
 .map {
   display: flex;
   align-items: center;
-  margin-top: 62px;
   min-height: 430px;
   outline: 1px solid red;
   flex: 0 0 100%;
@@ -1150,6 +1149,8 @@ textarea:focus {
   width: 1146px;
   padding-right: 27px;
   padding-left: 27px;
+  margin-top: 62px;
+  margin-bottom: 62px;
   position: relative;
 }
 
