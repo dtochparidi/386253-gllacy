@@ -10,7 +10,10 @@ body {
 }
 
 .catalogue-wrapper {
-  background-color: #849d8f;
+  background-color: #859d8f;
+  background-image: url(../img/background-light.png);
+  background-position: top;
+  background-repeat: repeat-x;
 }
 
 a {
@@ -124,12 +127,11 @@ textarea:focus {
   line-height: 60px;
   font-weight: bold;
   text-align:center;
-  outline: 1px solid red;
   flex: 0 0 100%;
   order: -2;
   padding: 0px;
   margin: 0px;
-  margin-top: 325px;
+  margin-top: 319px;
 }
 
 .left-block .title, .right-block .title {
@@ -146,7 +148,6 @@ textarea:focus {
 
 .catalog-title {
   font-size: 35px;
-  outline: 1px solid red;
   margin: 0px;
   margin-top: 13px;
   flex-grow: 1;
@@ -175,7 +176,6 @@ textarea:focus {
   padding-left: 27px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 
 .main-header .container {
@@ -192,7 +192,6 @@ textarea:focus {
 
 
 .logo-container {
-  outline: 1px solid red;
   width: 154px;
   min-height: 64px;
 }
@@ -203,17 +202,12 @@ textarea:focus {
 }
 
 .main-navigation {
-  outline: 1px solid red;
   width: 675px;
-  margin-left: 14px;
+  margin-left: 10px;
   color: white;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
 }
 
 .main-navigation .ull {
-  outline: 1px solid red;
   display: flex;
   justify-content: flex-start;
   margin-top: 22px;
@@ -221,7 +215,7 @@ textarea:focus {
 }
 
 .main-navigation .ull .list {
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 .list .main-sub-menu .list {
@@ -246,6 +240,9 @@ textarea:focus {
   height: 32px;
   padding-left: 14px;
   padding-right: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .container .menu-punkt:hover {
@@ -324,11 +321,9 @@ textarea:focus {
 
 .menupuntk:hover .sub-menu-punkt{
   visibility: none;
-  outline-color: 1px solid red;
 }
 
 .user-block {
-  outline: 1px solid red;
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
@@ -338,7 +333,7 @@ textarea:focus {
 }
 
 .user-block > .btn-s {
-  background-color: #9db1a6;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   font-size: 14px;
   line-height: 16px;
@@ -589,7 +584,6 @@ textarea:focus {
 }
 
 .time {
-  outline: 1px solid red;
   margin-left: auto;
   flex: 0 0 100%;
   text-align: right;
@@ -616,16 +610,13 @@ textarea:focus {
 
 .slider {
   flex: 0 0 100%;
-  outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  min-height: 534px;
 }
 
 .slide {
   flex: 0 0 100%;
-  outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -679,14 +670,6 @@ textarea:focus {
   background-color: #9d8b84;
 }
 
-#btn-2:checked ~ .site-wrapper .user-block > .btn-s {
-  background-color: #a1abb8;
-}
-
-#btn-3:checked ~ .site-wrapper .user-block > .btn-s {
-  background-color: #b3a59f;
-}
-
 .slider-radio {
   display: flex;
   justify-content: space-between;
@@ -695,7 +678,6 @@ textarea:focus {
   bottom: 0;
   left: 26;
   width: 79px;
-  outline: 1px solid red;
   margin: 0px;
   padding: 0px;
   height: 45px;
@@ -705,7 +687,6 @@ textarea:focus {
 .togle-fake {
   margin: 0px;
   padding: 0px;
-  outline: 1px solid red;
   display: flex;
   width: 20px;
   height: 20px;
@@ -720,7 +701,6 @@ textarea:focus {
 }
 
 .slider .btn {
-  outline: 3px solid red;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -750,7 +730,6 @@ textarea:focus {
   justify-content: space-between;
   font-size: 18px;
   line-height: 22px;
-  outline: 1px;
 }
 
 .block-container-text {
@@ -764,7 +743,6 @@ textarea:focus {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  outline: 1px solid red;
   padding-left: 20px;
   padding-top: 18px;
   width: 560px;
@@ -811,7 +789,6 @@ textarea:focus {
 }
 
 .articles {
-  outline: 1px solid red;
   display: flex;
   flex: 0 0 100%;
   flex-wrap: wrap;
@@ -821,7 +798,6 @@ textarea:focus {
 .icecream-articles {
   display: flex;
   flex-direction: column;
-  outline: 1px solid red;
   margin-top: 37px;
   margin-right: 26px;
   width: 267px;
@@ -831,7 +807,7 @@ textarea:focus {
 .icecream-hover:hover {
   width: 293px;
   min-height: 405px;
-  background-color:#a8b9ae;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   position: absolute;
   top: -6px;
@@ -948,7 +924,6 @@ textarea:focus {
 }
 
 .features {
-  outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
@@ -971,7 +946,6 @@ textarea:focus {
   flex-wrap: wrap;
   width: 483px;
   margin-top: 8px;
-  outline: 1px solid red;
   padding-left: 56px;
   position: relative;
 }
@@ -1038,7 +1012,6 @@ textarea:focus {
   align-items: flex-start;
   padding: 0px;
   margin: 0px;
-  outline: 1px solid red;
   width: 560px;
   height: 220px;
   padding-left: 20px;
@@ -1132,7 +1105,6 @@ textarea:focus {
   display: flex;
   align-items: center;
   min-height: 430px;
-  outline: 1px solid red;
   flex: 0 0 100%;
   margin-top: 40px;
   margin-bottom: 19px;
@@ -1145,7 +1117,6 @@ textarea:focus {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
   width: 1146px;
   padding-right: 27px;
   padding-left: 27px;
@@ -1160,7 +1131,6 @@ textarea:focus {
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  outline: 1px solid red;
   margin: 0px;
   padding: 0px;
   width: 276px;
@@ -1293,7 +1263,6 @@ textarea:focus {
 }
 
 .social {
-  outline: 1px solid red;
   width: 267px;
   position: relative;
 }
@@ -1373,7 +1342,6 @@ textarea:focus {
 }
 
 .about {
-  outline: 1px solid red;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1388,12 +1356,10 @@ textarea:focus {
 }
 
 .row-item {
- outline: 1px solid red;
  display: block;
 }
 
 .sign {
-  outline: 1px solid red;
   width: 189px;
   font-size: 12px;
   line-height: 18px;
@@ -1419,11 +1385,6 @@ textarea:focus {
   margin: 0px;
 }
 
-
-.sub-menu-container {
-  outline: 2px solid red;
-}
-
 .sub-menu .ull {
   flex: 0 0 100%;
   display: flex;
@@ -1439,7 +1400,6 @@ textarea:focus {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  outline: 1px solid red;
   flex-grow: 1;
 }
 
@@ -1448,10 +1408,8 @@ textarea:focus {
 }
 
 .pages {
-  outline: 1px solid red;
   display: flex;
   justify-content: flex-end;
-  outline: 1px solid red;
   text-align: right;
   font-size: 16px;
   line-height: 18px;
@@ -1481,7 +1439,6 @@ textarea:focus {
 
 .pages .ull .list {
   display: flex;
-  outline: 1px solid red;
   margin-right: 20px;
 }
 
@@ -1490,7 +1447,6 @@ textarea:focus {
 }
 
 .pages .ull .pages-active {
-  outline: 1px solid red;
   background-color: white;
   border-radius: 100px;
 }
@@ -1511,7 +1467,6 @@ textarea:focus {
 }
 
 .filter {
-  outline: 1px solid red;
   width: 879px;
   padding: 0px;
   margin: 0px;
@@ -1541,7 +1496,6 @@ textarea:focus {
   box-sizing: border-box;
   position: relative;
   padding-right: 16px;
-  outline: 1px solid red;
   padding-left: 46px;
 }
 
@@ -1685,8 +1639,8 @@ textarea:focus {
 .filter .radio:checked + .radio-fake::before{
   content: "";
   display: flex;
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 100%;
   background-color: white;
   margin-bottom: auto;
@@ -1736,25 +1690,21 @@ textarea:focus {
 }
 
 .filter-fieldset:first-child {
-  outline: 1px solid red;
   width: 193px;
   margin-right: 15px;
 }
 
 .ruller-block {
-  outline: 1px solid red;
   margin-right: 15px;
   width: 219px;
 }
 
 .filter-fieldset:nth-child(3) {
-  outline: 1px solid red;
   width: 415px;
   box-sizing: border-box;
 }
 
 .filter-fieldset:nth-child(4) {
-  outline: 1px solid red;
   width: 702px;
   margin-right: 15px;
   margin-top: 16px;
