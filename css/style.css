@@ -3,13 +3,14 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: #ffffff;
   background-color: #849d8f;
+  color: #ffffff;
   padding: 0px;
   margin: 0px;
 }
 
-.catalogue-page {
+.catalogue-wrapper {
+  background-color: #849d8f;
 }
 
 a {
@@ -81,36 +82,6 @@ textarea:focus {
   padding-left: 13px;
   padding-top: 13px;
   outline: none;
-}
-
-.background::after {
-  content: "";
-  width: 1045px;
-  height: 881px;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -2;
-}
-
-.background::after {
-  content: "";
-  width: 647px;
-  height: 584px;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 0;
-  top: 81px;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-image: url(../img/main-icecream.png);
-  background-repeat: no-repeat;
 }
 
 .btn {
@@ -643,18 +614,80 @@ textarea:focus {
   font-weight: bold;
 }
 
+.radio-input {
+  display: none;
+}
+
 .slider {
   flex: 0 0 100%;
   outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  min-height: 534px;
+}
+
+.slide {
+  flex: 0 0 100%;
+  outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  display: none;
+}
+
+#btn-1:checked ~ .site-wrapper .container .slider #slide-1,
+#btn-2:checked ~ .site-wrapper .container .slider #slide-2,
+#btn-3:checked ~ .site-wrapper .container .slider #slide-3 {
+  display: flex;
+}
+
+#btn-1:checked ~ .site-wrapper .container .slider .slider-radio .list label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper .container .slider .slider-radio .list label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper .container .slider .slider-radio .list label[for="btn-3"] {
+  background-color: white;
+}
+
+.site-wrapper {
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::after,
+.site-wrapper::before {
+  content: "";
+  visibility: hidden;
+}
+
+.site-wrapper::after {
+  background-image: url(../img/slide-2);
+}
+
+.site-wrapper::after {
+  background-image: url(../img/slide-3);
+}
+
+#btn-1:checked ~ .site-wrapper {
+  background-image: url(../img/slide1.png);
+  background-color: #849d8f;
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-image: url(../img/slide2.png);
+  background-color: #8996a6;
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-image: url(../img/slide3.png);
+  background-color: #9d8b84;
 }
 
 .slider-radio {
   position: absolute;
   bottom: 0;
   left: 26;
+  width: 79px;
   outline: 1px solid red;
   display: flex;
   justify-content: space-between;
@@ -662,17 +695,24 @@ textarea:focus {
   margin: 0px;
   padding: 0px;
   height: 45px;
+  z-index: 5;
 }
 
-.slider-radio .list {
-  display: block;
+.togle-fake {
+  margin: 0px;
+  padding: 0px;
+  outline: 1px solid red;
+  display: flex;
   width: 20px;
   height: 20px;
-  vertical-align: top;
   border: 2px solid white;
   border-radius: 50px;
-  margin-right: 8px;
   box-sizing: border-box;
+  top: 0px;
+}
+
+.togle-fake:hover {
+  background-color: #b2c1b7;
 }
 
 .slider .btn {
