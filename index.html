@@ -37,13 +37,13 @@
      <div class="user-block">
       <button class="btn-search btn-s" type="button">
       </button>
-      <form class="search hidden" action="#" method="post">
+      <form class="search" action="#" method="post">
        <input class="text" type="text" name="search" placeholder="Что ищем?">
       </form>
       <button class="btn-login btn-s" type="button">
        Вход
       </button>
-      <form class="login-form hidden" action="#" method="post">
+      <form class="login-form" action="#" method="post">
         <input class="text" type="text" name="login" placeholder="Электронная почта"><br>
         <input class="password" type="password" name="pass" placeholder="Пароль"><br>
         <button class="btn" type="submit" name="enter">Войти</button>
@@ -55,7 +55,7 @@
       <button class="purchase btn-s" type="button">
        Пусто
       </button>
-      <div class="purchase-popup hidden">
+      <div class="purchase-popup">
        <div class="fields-container">
         <div class="purchase-field">
          <button class="purchase-btn" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button>
@@ -203,7 +203,7 @@
         <p class="contacts-text-1">Адрес главного офиса <br> и офлайн магазина:<br><span class="map-adress"> ул. Большая Конюшенная <br>19/8, Санкт-Петербург</span></p>
         <p class="contacts-text-2">Для заказов по телефону:<br> <strong class="map-tel">8 812 450-25-25</strong><br>(с 10 до 20 ежедневно)</p>
         <button class="btn">Форма обратной связи</button>
-        <div class="feedback-container hidden">
+        <div class="feedback-container">
          <form class="feedback" action="abc" method="post">
           <legend class="feedback-title">Мы обязательно вам ответим!</legend>
           <input class="feedback-input" type="text" name="name" placeholder="Как вас зовут ?">
@@ -242,7 +242,7 @@
    </footer>
    </div>
    <script>
-    var link = document.querySelector(".btn-search");
+    var link = document.querySelector(".btn-login");
    </script>
   </body>
 </html>
