@@ -350,14 +350,9 @@ textarea:focus {
   outline: 0px;
 }
 
-.user-block > .btn-s:hover {
+.site-wrapper .container .user-block > .btn-s:hover {
   background-color: #f8f7f4;
   color: #323232;
-}
-
-.navi-btn {
-  background-color: #9db1a6;
-  border-radius: 50px;
 }
 
 .btn-search {
@@ -437,7 +432,7 @@ textarea:focus {
   right: 153px;
   top: 59px;
   z-index: 2;
-  background: #f8f7f4;
+  background-color: #f8f7f4;
   padding-left: 19px;
   padding-right: 17px;
   padding-top: 20px;
@@ -681,6 +676,14 @@ textarea:focus {
 #btn-3:checked ~ .site-wrapper {
   background-image: url(../img/slide3.png);
   background-color: #9d8b84;
+}
+
+#btn-2:checked ~ .site-wrapper .user-block > .btn-s {
+  background-color: #a1abb8;
+}
+
+#btn-3:checked ~ .site-wrapper .user-block > .btn-s {
+  background-color: #b3a59f;
 }
 
 .slider-radio {
