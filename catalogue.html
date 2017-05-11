@@ -32,45 +32,49 @@
        </ul>
      </nav>
      <div class="user-block">
-      <button class="btn-search btn-s" type="button">
-      </button>
-      <form class="search" action="#" method="post">
-       <input class="text" type="text" name="search" placeholder="Что ищем?">
-      </form>
-      <button class="btn-login btn-s" type="button">Вход
-      </button>
-      <form class="login-form" action="#" method="post">
-        <input class="text" type="text" name="login" placeholder="Электронная почта"><br>
-        <input class="password" type="password" name="pass" placeholder="Пароль"><br>
-        <button class="btn" type="submit" name="enter">Войти</button>
-        <div class="login-form-a">
-         <a class="a-black" href="#" title="#">Забыли пароль ? </a><br>
-         <a class="a-black" href="#" title="#">Новая регистрация</a>
-        </div>
-      </form>
-      <button class="purchase-white btn-s" type="button">2 товара
-      </button>
-      <div class="purchase-popup">
-       <div class="fields-container">
-        <div class="purchase-field">
-         <button class="purchase-btn" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button>
-         <img class="purchase-img" src="img/1s-b.jpg" alt="icecream" width="33" height="33">
-         <span class="purchase-text">Пломбир с апельсиновым джемом</span>
-         <span class="purchase-kg">1,5 кг х <span class="grey-text">200 руб.</span></span> <span class="purchase-rub">300 руб.</span>
-        </div>
-        <div class="purchase-field">
-         <button class="purchase-btn" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button>
-         <img class="purchase-img" src="img/2s-b.jpg" alt="icecream" width="33" height="33">
-         <span class="purchase-text">Клубничный пломбир с присыпкой
-         из белого шоколада</span>
-         <span class="purchase-kg">1,5 кг х <span class="grey-text">200 руб.</span></span> <span class="purchase-rub">300 руб.</span>
-        </div>
+      <div class="search-container">
+       <button class="btn-search btn-s" type="button"></button>
+       <form class="search" action="#" method="post">
+        <input class="text" type="text" name="search" placeholder="Что ищем?">
+       </form>
        </div>
-       <div class="purchase-final">
-        <span>Итого: 750 руб.</span>
-       </div>
-       <div class="purchase-submit">
-        <button class="btn" type="submit">Оформить заказ</button>
+       <div class="login-container">
+        <button class="btn-login btn-s" type="button">Вход</button>
+        <form class="login-form" action="#" method="post">
+         <input class="text" type="text" name="login" placeholder="Электронная почта"><br>
+         <input class="password" type="password" name="pass" placeholder="Пароль"><br>
+         <button class="btn" type="submit" name="enter">Войти</button>
+         <div class="login-form-a">
+          <a class="a-black" href="#" title="#">Забыли пароль ? </a><br>
+          <a class="a-black" href="#" title="#">Новая регистрация</a>
+         </div>
+        </form>
+      </div>
+      <div class="purchase-container">
+       <button class="purchase-white btn-s" type="button">2 товара
+       </button>
+       <div class="purchase-popup">
+        <div class="fields-container">
+         <div class="purchase-field">
+          <button class="purchase-btn" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button>
+          <img class="purchase-img" src="img/1s-b.jpg" alt="icecream" width="33" height="33">
+          <span class="purchase-text">Пломбир с апельсиновым джемом</span>
+          <span class="purchase-kg">1,5 кг х <span class="grey-text">200 руб.</span></span> <span class="purchase-rub">300 руб.</span>
+         </div>
+         <div class="purchase-field">
+          <button class="purchase-btn" type="button"><img src="img/x-b.png" alt="close" width="10" height="10"></button>
+          <img class="purchase-img" src="img/2s-b.jpg" alt="icecream" width="33" height="33">
+          <span class="purchase-text">Клубничный пломбир с присыпкой
+          из белого шоколада</span>
+          <span class="purchase-kg">1,5 кг х <span class="grey-text">200 руб.</span></span> <span class="purchase-rub">300 руб.</span>
+         </div>
+        </div>
+        <div class="purchase-final">
+         <span>Итого: 750 руб.</span>
+        </div>
+        <div class="purchase-submit">
+         <button class="btn" type="submit">Оформить заказ</button>
+        </div>
        </div>
       </div>
      </div>
@@ -96,9 +100,9 @@
         <legend class="form-legend"> Сортировка: </legend>
         <div class="select-container">
          <select class="filter-item select" name="select">
-          <option value="favorite">по популярности</option></li>
-          <option value="#"></option></li>
-          <option value="#">#</option></li>
+          <option value="favorite">по популярности</option>
+          <option value="#">#</option>
+          <option value="#">#</option>
          </select>
         </div>
        </fieldset>
@@ -164,7 +168,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/1-b.jpg" alt="310₽/кг" width="267" height="267">
          <b class="price">310₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочное с апельсиновым <br> джемом и цитрусовой стружкой</p>
+         <a href="#"><p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -174,7 +178,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/2-b.jpg" alt="380₽/кг" width="267" height="267">
          <b class="price">380₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочно-кофейное с кусочками <br> шоколада</p>
+         <a href="#"><p class="description">Сливочно-кофейное с кусочками шоколада</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -184,7 +188,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/3-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">355₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочно-клубничное с <br> присыпкой из белого шоколада</p>
+         <a href="#"><p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -194,7 +198,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/4-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">415₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочное крем-брюле с <br> карамельной подливкрй</p>
+         <a href="#"><p class="description">Сливочное крем-брюле с карамельной подливкрй</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -204,7 +208,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/5-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">325₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочное с брусничным <br> джемом</p>
+         <a href="#"><p class="description">Сливочное с брусничным джемом</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -214,7 +218,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/6-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">410₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочно-черничное с цельными <br> ягодами черники</p>
+         <a href="#"><p class="description">Сливочно-черничное с цельными ягодами черники</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -224,18 +228,17 @@
         <div class="hover-container">
          <img class="article-img" src="img/7-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">375₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочно-лимонное с <br> карамельной присыпкой</p>
+         <a href="#"><p class="description">Сливочно-лимонное с карамельной присыпкой</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
-      </article>
       </article>
       <article class="icecream-articles">
        <div class="icecream-hover">
         <div class="hover-container">
          <img class="article-img" src="img/8-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">320₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочное с шоколадной <br> стружкой</p>
+         <a href="#"><p class="description">Сливочное с шоколадной стружкой</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -245,7 +248,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/9-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">440₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочно-ванильное с <br> кусочками шоколада</p>
+         <a href="#"><p class="description">Сливочно-ванильное с кусочками шоколада</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -255,7 +258,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/10-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">435₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочное с ментоловым <br> сиропом</p>
+         <a href="#"><p class="description">Сливочное с ментоловым сиропом</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -265,7 +268,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/11-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">355₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочное с кусочками черного <br> шоколада</p>
+         <a href="#"><p class="description">Сливочное с кусочками черного шоколада</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -275,7 +278,7 @@
         <div class="hover-container">
          <img class="article-img" src="img/12-b.jpg" alt="355₽/кг" width="267" height="267">
          <b class="price">420₽<span class="kg">/кг</span></b>
-         <p class="description">Сливочное с мятным сиропом</p>
+         <a href="#"><p class="description">Сливочное с мятным сиропом</p></a>
          <button class="btn">Быстрый просмотр</button>
         </div>
        </div>
@@ -291,7 +294,6 @@
          <li class="list"><a class="pages-a" href="#">5</a></li>
          <li class="list"><a class="pages-a" href="#"><span class="pages-forward"></span></a></li>
        </ul>
-
      </nav>
     </div>
    </main>

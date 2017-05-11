@@ -215,6 +215,11 @@ textarea:focus {
   color: white;
 }
 
+.main-navigation .ull .list {
+  position: relative;
+  padding-bottom: 5px;
+}
+
 .main-navigation .ull .list:first-child:hover .main-sub-menu  {
   visibility: visible;
 }
@@ -272,8 +277,8 @@ textarea:focus {
   background-color: #f8f7f4;
   border-radius: 5px;
   position: absolute;
-  top: 60px;
-  left: 184px;
+  top: 37px;
+  left: 0px;
   padding-top: 13px;
   padding-bottom: 7px;
   box-sizing: border-box;
@@ -338,7 +343,7 @@ textarea:focus {
   padding-top: 23px;
 }
 
-.user-block > .btn-s {
+.user-block .btn-s {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   font-size: 14px;
@@ -355,17 +360,25 @@ textarea:focus {
   cursor: pointer ;
 }
 
+.search-container {
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  padding-left: 30px;
+}
+
 .btn-search {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 32px;
   height: 32px;
-  margin-right: 10px;
   position: relative;
 }
 
-.btn-search:hover + .search {
+.search-container:hover .search {
   visibility: visible;
 }
 
@@ -390,8 +403,8 @@ textarea:focus {
   padding-top: 20px;
   background-color: #f8f7f4;
   position: absolute;
-  right: 256px;
-  top: 59px;
+  right: 0px;
+  top: 37px;
   z-index: 2;
   border-radius: 6px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
@@ -402,18 +415,25 @@ textarea:focus {
   width: 100%;
 }
 
+.login-container {
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+  padding-bottom: 5px;
+  margin-right: 10px;
+}
+
 .btn-login {
   display: flex;
   align-items: center;
   min-width: 92px;
   height: 32px;
-  margin-right: 10px;
   padding-left: 45px;
   box-sizing: border-box;
   position: relative;
 }
 
-.btn-login:hover + .login-form {
+.login-container:hover .login-form {
   visibility: visible;
 }
 
@@ -438,8 +458,8 @@ textarea:focus {
   flex-wrap: wrap;
   width: 277px;
   position: absolute;
-  right: 153px;
-  top: 59px;
+  right: 0px;
+  top: 37px;
   z-index: 2;
   background-color: #f8f7f4;
   padding-left: 19px;
@@ -484,6 +504,13 @@ textarea:focus {
   line-height: 21px;
 }
 
+.purchase-container {
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+  padding-bottom: 5px;
+}
+
 .purchase {
   display: flex;
   align-items: center;
@@ -507,7 +534,7 @@ textarea:focus {
   font-weight: 500;
 }
 
-.purchase:hover + .purchase-popup, .purchase-white:hover + .purchase-popup {
+.purchase-container:hover .purchase-popup {
   visibility: visible;
 }
 
@@ -532,8 +559,8 @@ textarea:focus {
   z-index: 2;
   flex-wrap: wrap;
   position: absolute;
-  top: 59px;
-  right: 27px;
+  top: 37px;
+  right: 0px;
   background: #f8f7f4;
   color: #323232;
   padding-top: 20px;
@@ -967,6 +994,7 @@ textarea:focus {
   line-height: 22px;
   font-weight: 500;
   text-decoration: underline;
+  width: 256px;
 }
 
 .icecream-articles .btn {
@@ -974,7 +1002,6 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 12px;
   min-width: 200px;
   height: 44px;
   font-size: 18px;
@@ -984,8 +1011,10 @@ textarea:focus {
   padding-left: 20px;
   padding-right: 20px;
   left: 33px;
+  align-self: baseline;
   position: absolute;
   visibility: hidden;
+  margin-top: 20px;
 }
 
 .features {
@@ -1009,7 +1038,7 @@ textarea:focus {
 .features-item {
   display: flex;
   flex-wrap: wrap;
-  width: 483px;
+  width: 480px;
   margin-top: 10px;
   padding-left: 56px;
   position: relative;
@@ -1061,7 +1090,7 @@ textarea:focus {
 
 
 .features-ice, .features-leaf {
-  margin-right: 26px;
+  margin-right: 30px;
 }
 
 .features-p {
@@ -1143,13 +1172,11 @@ textarea:focus {
 }
 
 .mail-text {
-  display: block;
-
-  width: 505px;
+  display: flex;
+  width: 512px;
   margin: 0px;
   padding: 0px;
   margin-bottom: 35px;
-  flex: 0 0 100%;
 }
 
 .mail-input {
@@ -1765,6 +1792,7 @@ textarea:focus {
   left: 10px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .ruller-max {
@@ -1776,6 +1804,7 @@ textarea:focus {
   right: 20px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .radio-fake {
