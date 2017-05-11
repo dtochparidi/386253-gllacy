@@ -1228,6 +1228,7 @@ textarea:focus {
   padding-left: 27px;
   position: relative;
   padding: auto;
+  outline: 2px solid red;
 }
 
 .map-contacts {
