@@ -361,12 +361,10 @@ textarea:focus {
 }
 
 .search-container {
-  display: flex;
   align-self: flex-start;
   position: relative;
   padding-bottom: 5px;
   margin-right: 10px;
-  padding-left: 30px;
 }
 
 .btn-search {
@@ -589,6 +587,7 @@ textarea:focus {
 }
 
 .purchase-final {
+  align-self: flex-end;
   margin-left: auto;
   font-size: 15px;
   line-height: 18px;
@@ -599,6 +598,7 @@ textarea:focus {
 
 .purchase-submit {
   margin-left: auto;
+  align-self: flex-end;
 }
 
 .purchase-submit .btn {
