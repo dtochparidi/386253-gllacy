@@ -1210,18 +1210,13 @@ textarea:focus {
   background-image: url(../img/map-b.jpg);
   background-color: #f7f1d9;
   background-position: center;
+  position: relative;
 }
 
-.map-container {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1146px;
-  padding-right: 27px;
-  padding-left: 27px;
-  margin-top: 62px;
-  margin-bottom: 62px;
-  position: relative;
+.google-map {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
 }
 
 .map-contacts {
@@ -1242,9 +1237,8 @@ textarea:focus {
   font-size: 14px;
   line-height: 20px;
   position: absolute;
-  right: 0px;
-  top: 0px;
-  z-index: 3;
+  right: 27px;
+  top: 62px;
 }
 
 .contacts-text-1, .contacts-text-2, .contacts-text-3  {
