@@ -1202,6 +1202,7 @@ textarea:focus {
 .map {
   display: flex;
   align-items: center;
+  min-width: 1200px;
   min-height: 430px;
   flex: 0 0 100%;
   margin-top: 36px;
@@ -1652,7 +1653,6 @@ textarea:focus {
 }
 
 .filter {
-  width: 879px;
   padding: 0px;
   margin: 0px;
   margin-top: 37px;
