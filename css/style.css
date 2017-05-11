@@ -1200,11 +1200,8 @@ textarea:focus {
 }
 
 .map {
-  display: flex;
-  align-items: center;
-  min-width: 1200px;
+  width: 100%;
   min-height: 430px;
-  flex: 0 0 100%;
   margin-top: 36px;
   margin-bottom: 0px;
   background-image: url(../img/map-b.jpg);
@@ -1216,19 +1213,16 @@ textarea:focus {
 
 .google-map {
   width: 100%;
- height: 100%;
+  height: 100%;
 }
 
 .map-container {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
   width: 1146px;
   padding-right: 27px;
   padding-left: 27px;
   position: relative;
-  padding: auto;
   outline: 2px solid red;
+  margin: auto;
 }
 
 .map-contacts {
