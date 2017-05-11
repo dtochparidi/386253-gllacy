@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', 'Calibri', sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -43,7 +43,7 @@ a:active {
 input  {
   border: 1px solid #d3d3d2;
   color: #999999;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   padding-left: 14px;
   border-radius: 5px;
@@ -143,6 +143,7 @@ textarea:focus {
 .features .title {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 500;
   margin: 0px;
 }
 
@@ -214,6 +215,10 @@ textarea:focus {
   color: white;
 }
 
+.main-navigation .ull .list:first-child:hover .main-sub-menu  {
+  visibility: visible;
+}
+
 .main-navigation .ull .list {
   margin-right: 0px;
 }
@@ -238,11 +243,12 @@ textarea:focus {
   display: flex;
   align-items: center;
   height: 32px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 13px;
+  padding-right: 13px;
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
+  margin-right: 2px;
 }
 
 .container .menu-punkt:hover {
@@ -359,6 +365,10 @@ textarea:focus {
   position: relative;
 }
 
+.btn-search:hover + .search {
+  visibility: visible;
+}
+
 .btn-search::before {
   content: "";
   width: 17px;
@@ -372,7 +382,7 @@ textarea:focus {
 }
 
 .search {
-  display: none;
+  display: flex;
   align-items: center;
   width: 311px;
   padding-left: 15px;
@@ -385,6 +395,7 @@ textarea:focus {
   z-index: 2;
   border-radius: 6px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
 }
 
 .search .text {
@@ -400,6 +411,10 @@ textarea:focus {
   padding-left: 45px;
   box-sizing: border-box;
   position: relative;
+}
+
+.btn-login:hover + .login-form {
+  visibility: visible;
 }
 
 .btn-login:hover::before {
@@ -418,7 +433,7 @@ textarea:focus {
 }
 
 .login-form {
-  display: none;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 277px;
@@ -433,6 +448,7 @@ textarea:focus {
   border-radius: 6px;
   padding-bottom: 20px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
 }
 
 .text {
@@ -478,6 +494,23 @@ textarea:focus {
   position: relative;
 }
 
+.catalogue-wrapper .main-header .purchase-white {
+  display: flex;
+  align-items: center;
+  min-width: 117px;
+  height: 32px;
+  padding-left: 45px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: rgba(248, 247, 244, 0.99);
+  color: #323232;
+  font-weight: 500;
+}
+
+.purchase:hover + .purchase-popup, .purchase-white:hover + .purchase-popup {
+  visibility: visible;
+}
+
 .purchase::before {
   content: "";
   width: 21px;
@@ -494,7 +527,7 @@ textarea:focus {
 
 .purchase-popup {
   width: 540px;
-  display: none;
+  display: flex;
   flex-direction: column;
   z-index: 2;
   flex-wrap: wrap;
@@ -513,6 +546,7 @@ textarea:focus {
   font-size: 13px;
   line-height: 16px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
 }
 
 .purchase-field {
@@ -583,6 +617,18 @@ textarea:focus {
   margin-right:
 }
 
+.main-header .purchase-white::after {
+  content: "";
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  right: 80px;
+  background-image: url(../img/korzina-red-b.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .time {
   margin-left: auto;
   flex: 0 0 100%;
@@ -598,9 +644,14 @@ textarea:focus {
 }
 
 .tel {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 4px;
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
+  margin-top: 5px;
   text-decoration: none;
 }
 
@@ -675,8 +726,8 @@ textarea:focus {
   justify-content: space-between;
   align-items: flex-start;
   position: absolute;
-  bottom: 0;
-  left: 26;
+  top: 563px;
+  left: 27px;
   width: 79px;
   margin: 0px;
   padding: 0px;
@@ -688,8 +739,8 @@ textarea:focus {
   margin: 0px;
   padding: 0px;
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   border: 2px solid white;
   border-radius: 50px;
   box-sizing: border-box;
@@ -703,9 +754,9 @@ textarea:focus {
 .slider .btn {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  height: 60px;
-  min-width: 218px;
+  margin-top: 30px;
+  height: 63px;
+  min-width: 278px;
   font-size: 32px;
   line-height: 44px;
   font-weight: bold;
@@ -714,15 +765,16 @@ textarea:focus {
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  box-sizing: border-box;
 }
 
 .main-index {
-  margin-top: 60px;
+  margin-top: 41px;
   position: relative;
 }
 
 .main-catalogue {
-  margin-top:  26px;
+  margin-top:  23px;
 }
 
 .block-container {
@@ -733,9 +785,14 @@ textarea:focus {
 }
 
 .block-container-text {
+  display: block;
+  width: 514px;
   margin: 0px;
   padding: 0px;
-  margin-top: 16px;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
 }
 
 .left-block, .right-block {
@@ -744,11 +801,10 @@ textarea:focus {
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 20px;
-  padding-top: 18px;
+  padding-top: 17px;
   width: 560px;
-  min-height: 229px;
+  height: 229px;
   box-sizing: border-box;
-  padding-right: 21px;
   background-image: url(../img/malina-b.jpg);
   background-color: #35030c;
   border-radius: 15px;
@@ -767,6 +823,7 @@ textarea:focus {
   min-width: 165px;
   height: 45px;
   margin-left: auto;
+  margin-right: 21px;
   font-size: 18px;
   line-height: 24px;
   margin-top: 43px;
@@ -774,6 +831,10 @@ textarea:focus {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+}
+
+.right-block .btn {
+  min-width: 189px;
 }
 
 .block-container .title {
@@ -792,7 +853,7 @@ textarea:focus {
   display: flex;
   flex: 0 0 100%;
   flex-wrap: wrap;
-  margin-top: 63px;
+  margin-top: 40px;
 }
 
 .icecream-articles {
@@ -879,11 +940,15 @@ textarea:focus {
   display: block;
   position: absolute;
   left: 0;
-  top: 216px;
+  top: 209px;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.3);
+}
+
+.letter {
+  font-size: 10px;
 }
 
 .kg {
@@ -928,15 +993,15 @@ textarea:focus {
   flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-left: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   margin-bottom: 40px;
-  margin-top: 26px;
+  margin-top: 38px;
   background-image: url(../img/texture.jpg);
   color: #323232;
   position: relative;
-  border-radius: 20px;
+  border-radius: 14px;
   background-color: #eadfc7;
   box-sizing: border-box;
 }
@@ -945,7 +1010,7 @@ textarea:focus {
   display: flex;
   flex-wrap: wrap;
   width: 483px;
-  margin-top: 8px;
+  margin-top: 10px;
   padding-left: 56px;
   position: relative;
 }
@@ -1002,7 +1067,9 @@ textarea:focus {
 .features-p {
   padding: 0px;
   margin: 0px;
-  padding-top: 14px;
+  padding-top: 12px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .blog {
@@ -1016,7 +1083,7 @@ textarea:focus {
   height: 220px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 27px;
+  padding-top: 22px;
   padding-bottom: 20px;
   font-size: 24px;
   line-height: 30px;
@@ -1025,7 +1092,7 @@ textarea:focus {
   background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   box-sizing: border-box;
 }
 
@@ -1039,6 +1106,7 @@ textarea:focus {
 }
 
 .blog-text {
+  margin-top: 3px;
   margin-bottom: 9px;
 }
 
@@ -1063,7 +1131,7 @@ textarea:focus {
   margin: 0px;
   width: 550px;
   height: 210px;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-left: 21px;
   padding-bottom: 35px;
   font-size: 16px;
@@ -1075,9 +1143,12 @@ textarea:focus {
 }
 
 .mail-text {
+  display: block;
+
+  width: 505px;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   flex: 0 0 100%;
 }
 
@@ -1106,8 +1177,8 @@ textarea:focus {
   align-items: center;
   min-height: 430px;
   flex: 0 0 100%;
-  margin-top: 40px;
-  margin-bottom: 19px;
+  margin-top: 36px;
+  margin-bottom: 0px;
   background-image: url(../img/map-b.jpg);
   background-color: #f7f1d9;
   background-position: center;
@@ -1144,18 +1215,24 @@ textarea:focus {
   line-height: 20px;
 }
 
-.contacts-text-1, .contacts-text-2  {
+.contacts-text-1, .contacts-text-2, .contacts-text-3  {
   margin: 0px;
   padding: 0px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .contacts-text-1 {
-  margin-top: 29px;
-  margin-bottom: 21px;
+  margin-top: 30px;
+  margin-bottom: 19px;
 }
 
 .contacts-text-2 {
-  margin-bottom: 24px;
+  margin-bottom: 5px;
+}
+
+.map-worktime {
+  line-height: 22px;
 }
 
 .map-adress {
@@ -1170,7 +1247,7 @@ textarea:focus {
   margin: 0px;
   padding: 0px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
   font-weight: bold;
 }
 
@@ -1185,16 +1262,19 @@ textarea:focus {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
+  margin-top: 23px;
 }
 
 .feedback-container {
   display: flex;
-  width: 1000px;
-  height: 1000px;
-  background-color: black;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
+  top: 0px;
+  left: 0px;
   z-index: 5;
-
+  visibility: hidden;
 }
 
 .feedback {
@@ -1203,20 +1283,39 @@ textarea:focus {
   justify-content: flex-start;
   align-items: flex-start;
   width: 477px;
+  height: 442px;
   padding: 0px;
   margin: 0px;
   padding-top: 19px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 27px;
-  border-radius: 20px;
+  border-radius: 10px;
+  margin-top: 100px;
   background-color: #f8f7f4;
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
 }
 
+.feedback-close {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/close.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 450px;
+  top: 115px;
+  z-index: 10;
+  cursor: pointer;
+}
+
 .feedback-title {
+  padding: 0px;
+  margin: 0px;
   font-size: 24px;
   line-height: 28px;
   font-weight: bold;
@@ -1256,9 +1355,20 @@ textarea:focus {
 .main-footer .container {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
   min-height: 103px;
   position: relative;
-  border-top: 2px solid #a9bbb1;
+  padding-top: 36px;
+}
+
+.container-catalogue::before {
+  content: "";
+  display: block;
+  width: 1146px;
+  height: 1px;
+  background-color: rgba(250, 250, 250, 0.3);
+  position: absolute;
+  top: 0px;
 }
 
 .social {
@@ -1279,7 +1389,7 @@ textarea:focus {
 .social .social-item:nth-child(1)::after {
   background-position: -65px -137px;
   position: absolute;
-  top: 36px;
+  top: 0px;
   left: 0px;
 }
 
@@ -1289,13 +1399,14 @@ textarea:focus {
 
 .social .social-item:nth-child(1):hover::after  {
   background-image: url(../img/twitter-white.png);
-  background-position:  center;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .social .social-item:nth-child(2)::after {
   background-position: -33px -137px;
   position: absolute;
-  top: 36px;
+  top: 0px;
   left: 50px;
 }
 
@@ -1311,7 +1422,7 @@ textarea:focus {
 .social .social-item:nth-child(3)::after {
   background-position: -1px -137px;
   position: absolute;
-  top: 36px;
+  top: 0px;
   left: 99px;
 }
 
@@ -1327,7 +1438,7 @@ textarea:focus {
 .social .social-item:nth-child(4)::after {
   background-position: -1px -169px;
   position: absolute;
-  top: 36px;
+  top: 0px;
   left: 148px;
 }
 
@@ -1347,7 +1458,26 @@ textarea:focus {
   width: 431px;
   margin-left: 26px;
   padding-left: 129px;
-  padding-top: 37px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+}
+
+.about-icon {
+  display: block;
+  width: 15px;
+  height: 13px;
+  background-image: url(../img/serdce-b.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4px;
+  left: -22px;
+}
+
+.row-position {
+  position: relative;
 }
 
 .row:nth-child(2) {
@@ -1356,15 +1486,18 @@ textarea:focus {
 
 .row-item {
  display: block;
+ margin-bottom: 3px;
 }
 
 .sign {
-  width: 189px;
+  display: flex;
+  justify-content: flex-end;
+  width: 192px;
   font-size: 12px;
   line-height: 18px;
   margin-left: 26px;
   padding-left: 78px;
-  padding-top: 62px;
+  padding-top: 27px;
   position: relative;
 }
 
@@ -1375,13 +1508,19 @@ textarea:focus {
   background-image: url(../img/sprite.png);
   background-position: -0px -0px;
   position: absolute;
-  top: 19px;
-  left: 79px;
+  top: -15px;
+  left: 82px;
 }
 
 .sign-text {
   padding: 0px;
   margin: 0px;
+}
+
+.root-punkt {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
 }
 
 .sub-menu .ull {
@@ -1413,7 +1552,7 @@ textarea:focus {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  margin-top: 39px;
+  margin-top: 81px;
   margin-bottom: 30px;
 }
 
@@ -1423,22 +1562,25 @@ textarea:focus {
   color: #323232;
 }
 
-.disable {
-  color: rgba(255, 255, 255, 0.5);
+.pages .disable {
+  opacity: 0.2;
 }
 
-.main .disable:hover {
-  color: rgba(255, 255, 255, 0.5);
+.catalogue-wrapper .pages .disable:hover {
+  background-color: transparent;
+  cursor: default;
 }
 
 .pages .ull {
   display: flex;
   justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
 }
 
 .pages .ull .list {
   display: flex;
-  margin-right: 20px;
+  margin-right: 3px;
 }
 
 .pages .ull .list:last-child {
@@ -1465,11 +1607,27 @@ textarea:focus {
   padding-right: 0px;
 }
 
+.pages-forward {
+  width: 9px;
+  height: 14px;
+  background-image: url(../img/arrow-forward.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pages-backward {
+  width: 9px;
+  height: 14px;
+  background-image: url(../img/arrow-backward.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .filter {
   width: 879px;
   padding: 0px;
   margin: 0px;
-  margin-top: 26px;
+  margin-top: 37px;
   border: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -1498,6 +1656,10 @@ textarea:focus {
   padding-left: 46px;
 }
 
+.catalogue-wrapper .form-legend {
+  margin-bottom: 8px;
+}
+
 .filter .list {
   position: relative;
 }
@@ -1521,6 +1683,7 @@ textarea:focus {
 .form-legend, .ruller-p {
   margin:0px;
   padding:0px;
+  padding-left: 16px;
   font-size: 14px;
   line-height: 15px;
   margin-bottom: 9px;
@@ -1543,8 +1706,8 @@ textarea:focus {
   align-items: center;
   background-color: #a9b9af;
   border-radius: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 20px;
 }
 
@@ -1557,7 +1720,7 @@ textarea:focus {
   line-height: 18px;
   font-weight: 500;
   height: 36px;
-  background-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .filter .select-container:hover {
@@ -1617,13 +1780,13 @@ textarea:focus {
 
 .radio-fake {
   display: flex;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border-radius: 50px;
-  border: 2px solid white;
+  border: 1px solid white;
   position: absolute;
   top: 0px;
-  left: -30px;
+  left: -32px;
   bottom: 0px;
   right: 0px;
   margin-bottom: auto;
@@ -1632,7 +1795,7 @@ textarea:focus {
 }
 
 .filter .radio:hover + .radio-fake {
-  border: 3px solid white;
+  border: 2px solid white;
 }
 
 .filter .radio:checked + .radio-fake::before{
@@ -1654,11 +1817,11 @@ textarea:focus {
   display: flex;
   width: 20px;
   height: 20px;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 3px;
   position: absolute;
   top: 0px;
-  left: -33px;
+  left: -30px;
   bottom: 0px;
   right: 0px;
   margin-bottom: auto;
@@ -1667,7 +1830,7 @@ textarea:focus {
 }
 
 .filter .form-particle:hover + .checkbox-fake {
-  border: 3px solid white;
+  border: 2px solid white;
 }
 
 .filter .form-particle:checked + .checkbox-fake::after {
@@ -1706,7 +1869,7 @@ textarea:focus {
 .filter-fieldset:nth-child(4) {
   width: 702px;
   margin-right: 15px;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .filter-button {
@@ -1745,4 +1908,8 @@ textarea:focus {
 
 .hidden {
   display: none;
+}
+
+.content-show {
+  visibility: visible;
 }

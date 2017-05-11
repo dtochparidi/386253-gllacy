@@ -17,17 +17,17 @@
    <header class="main-header">
     <div class="container">
      <div class="logo-container">
-       <a href="#"><img class="main-logo" src="img/logo-b.png" alt="logo" width="154" height="64"></a>
+       <a><img class="main-logo" src="img/logo-b.png" alt="logo" width="154" height="64"></a>
      </div>
      <nav class="main-navigation">
        <ul class="ull">
         <li class="list"><a class="menu-punkt" href="catalogue.html" title="catalogue">Каталог</a>
          <ul class="main-sub-menu">
           <li class="list"><p class="sub-menu-first">Новинки</p></li>
-          <li class="list"><a class="sub-menu-punkt a-black" href="#" title="#">Сливочное</a></li>
-          <li class="list"><a class="sub-menu-punkt a-black" href="#" title="#">Щербеты</a></li>
-          <li class="list"><a class="sub-menu-punkt a-black" href="#" title="#">Фруктовый лед</a></li>
-          <li class="list"><a class="sub-menu-punkt a-black" href="#" title="#">Мелорин</a></li>
+          <li class="list"><a class="sub-menu-punkt a-black" href="catalogue.html" title="catalogue">Сливочное</a></li>
+          <li class="list"><a class="sub-menu-punkt a-black" href="catalogue.html" title="catalogue">Щербеты</a></li>
+          <li class="list"><a class="sub-menu-punkt a-black" href="catalogue.html" title="catalogue">Фруктовый лед</a></li>
+          <li class="list"><a class="sub-menu-punkt a-black" href="catalogue.html" title="catalogue">Мелорин</a></li>
          </ul>
         </li>
         <li class="list"><a class="menu-punkt" href="#" title="">Доставка и оплата</a></li>
@@ -44,7 +44,7 @@
        Вход
       </button>
       <form class="login-form" action="#" method="post">
-        <input class="text" type="text" name="login" placeholder="Электронная почта"><br>
+        <input class="text special" type="text" name="login" placeholder="Электронная почта"><br>
         <input class="password" type="password" name="pass" placeholder="Пароль"><br>
         <button class="btn" type="submit" name="enter">Войти</button>
         <div class="login-form-a">
@@ -79,7 +79,7 @@
        </div>
       </div>
      </div>
-     <p class="time">С 10 до 20, ежедневно<br><strong class="tel">8 812 450-25-25</strong></p>
+     <p class="time">С 10 до 20, ежедневно<strong class="tel">8 812 450-25-25</strong></p>
      <div class="slider">
       <div class="slide" id="slide-1">
        <h2 class="main-title title">Крем-брюле и пломбир<br> с малиновым джемом</h2>
@@ -105,13 +105,13 @@
     <div class="container">
      <div class="block-container">
       <section class="left-block">
-       <h3 class="title">Малинка даром</h3>
-       <p class="block-container-text">При покупке 2 кг любого фруктового мороженного, добавим <br> в ваш заказ банку малинового варенья бесплатно</p>
+       <h3 class="title">Малинка даром!</h3>
+       <p class="block-container-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</p>
        <a href="#" class="btn">  Хочу варенье! </a>
       </section>
       <section class="right-block">
-       <h3 class="title">Шоколад даром!</h3>
-       <p class="block-container-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br> вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+       <h3 class="title">Шоколадки даром!</h3>
+       <p class="block-container-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
        <a href="#" class="btn"> Хочу шоколадки! </a>
       </section>
      </div>
@@ -121,7 +121,7 @@
         <div class="hover-container">
          <span class="hit"></span>
          <img class="article-img" src="img/1-b.jpg" alt="310₽/кг" width="267" height="267">
-         <b class="price">310₽<span class="kg">/кг</span></b>
+         <b class="price">310<span class="letter"> </span>₽<span class="kg">/кг</span></b>
          <p class="description">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</p>
          <button class="btn">Быстрый просмотр</button>
         </div>
@@ -162,8 +162,8 @@
       </article>
      </div>
      <section class="features">
-      <h3 class="title">Магазин Глейси это онлайн и офлайн магазин по продаже мороженного
-      собственного производства </h3>
+      <h3 class="title">Магазин Глейси — это онлайн и офлайн магазин по продаже
+        мороженого собственного производства на развес </h3>
       <div class="features-item features-ice">
        <p class="features-p">Все наше мороженое изготавливается на собственном<br> производстве,
        с использованием современного оборудования<br> и проверенных временем технологий.</p>
@@ -201,12 +201,14 @@
       <div class="map-container">
        <section class="map-contacts">
         <p class="contacts-text-1">Адрес главного офиса <br> и офлайн магазина:<br><span class="map-adress"> ул. Большая Конюшенная <br>19/8, Санкт-Петербург</span></p>
-        <p class="contacts-text-2">Для заказов по телефону:<br> <strong class="map-tel">8 812 450-25-25</strong><br>(с 10 до 20 ежедневно)</p>
-        <button class="btn">Форма обратной связи</button>
+        <p class="contacts-text-2">Для заказов по телефону:</p>
+        <p class="contacts-text-3"><strong class="map-tel">8 812 450-25-25</strong><br><span class="map-worktime">(с 10 до 20 ежедневно)</span></p>
+        <button class="btn js">Форма обратной связи</button>
         <div class="feedback-container">
          <form class="feedback" action="abc" method="post">
-          <legend class="feedback-title">Мы обязательно вам ответим!</legend>
-          <input class="feedback-input" type="text" name="name" placeholder="Как вас зовут ?">
+          <span class="feedback-close"></span>
+          <h4 class="feedback-title">Мы обязательно вам ответим!</h4>
+          <input class="feedback-input" type="text" name="your-name" placeholder="Как вас зовут ?">
           <input class="feedback-input" type="text" name="mail" placeholder="Ваша почта для ответа ?">
           <textarea class="feedback-textarea" name="somthing">Напишите что нибудь...</textarea>
           <button class="btn" name="feedback">Отправить</button>
@@ -225,7 +227,8 @@
         <a class="social-item" href="#"></a>
      </div>
      <div class="about">
-      <div class="row">
+      <div class="row row-position">
+       <span class="about-icon"></span>
        <a class="row-item" href="#" title="">Для поставщиков</a>
        <a class="row-item" href="#" title="">О производстве</a>
       </div>
@@ -236,13 +239,32 @@
      </div>
      <div class="sign">
       <a class="sign-academy" href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"></a>
-      <p class="sign-text">Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"> <span> HTML Academy </span> </a>2016</p>
+      <p class="sign-text">Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss" title="html-academy"> <span> HTML Academy</span></a> © 2017</p>
      </div>
     </div>
    </footer>
    </div>
+
+
    <script>
-    var link = document.querySelector(".btn-login");
-   </script>
+
+    var login = document.querySelector(".js");
+    var login_popup = document.querySelector(".feedback-container");
+    var input = document.querySelector("[name=your-name]");
+    var close = document.querySelector(".feedback-close");
+
+    login.addEventListener("click", function(evt){
+    evt.preventDefault();
+    login_popup.classList.add("content-show");
+    input.focus();
+    });
+
+    close.addEventListener("click", function(evt){
+    evt.preventDefault();
+    login_popup.classList.remove("content-show");
+    });
+
+
+  </script>
   </body>
 </html>
