@@ -1208,7 +1208,6 @@ textarea:focus {
   background-color: #f7f1d9;
   background-position: center;
   position: relative;
-  outline: 2px solid red;
 }
 
 .google-map {
@@ -1221,7 +1220,6 @@ textarea:focus {
   padding-right: 27px;
   padding-left: 27px;
   position: relative;
-  outline: 2px solid red;
   margin: auto;
 
 }
