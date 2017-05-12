@@ -1681,11 +1681,28 @@ textarea:focus {
   border: 0px;
 }
 
-.filter-title {
-  white-space: nowrap;
+.filter-fieldset:first-child {
+  width: 193px;
+  margin-right: 15px;
 }
 
-.main .filter .filter-container {
+.filter-fieldset:nth-child(2) {
+  margin-right: 15px;
+  width: 219px;
+}
+
+.filter-fieldset:nth-child(3) {
+  width: 415px;
+  box-sizing: border-box;
+}
+
+.filter-fieldset:nth-child(4) {
+  width: 702px;
+  margin-top: 14px;
+  box-sizing: border-box;
+}
+
+.filter .ull {
   display: flex;
   align-items: center;
   background-color: #a9bab0;
@@ -1696,31 +1713,43 @@ textarea:focus {
   height: 36px;
   box-sizing: border-box;
   position: relative;
-  padding-right: 16px;
-  padding-left: 46px;
-}
-
-.catalogue-wrapper .form-legend {
-  margin-bottom: 8px;
+  padding-right: 10px;
 }
 
 .filter .list {
   position: relative;
 }
 
-.fieldset-checkbox .filter-container .list {
-  margin-right: 50px;
+.fieldset-checkbox .ull .list:first-child {
+  margin-right: 52px;
+  margin-left: 47px;
 }
 
-.fieldset-checkbox .filter-container .list:last-child {
+.fieldset-checkbox .ull .list:nth-child(2) {
+  margin-right: 54px;
+}
+
+.fieldset-checkbox .ull .list:nth-child(3) {
+  margin-right: 56px;
+}
+
+.fieldset-checkbox .ull .list:nth-child(4) {
+  margin-right: 52px;
+}
+
+.fieldset-checkbox .ull .list:last-child {
   margin-right: 0px;
 }
 
-.fieldset-radio .filter-container .list {
-  margin-right: 49px;
+.fieldset-radio .ull .list {
+  margin-right: 50px;
 }
 
-.fieldset-radio .filter-container .list:last-child {
+.fieldset-radio .ull .list:first-child {
+  margin-left: 46px;
+}
+
+.fieldset-radio .ull .list:last-child {
   margin-right: 0px;
 }
 
@@ -1730,12 +1759,11 @@ textarea:focus {
   padding-left: 16px;
   font-size: 14px;
   line-height: 15px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .form-particle {
   position: absolute;
-  display: flex;
   left: -30px;
   top: 0px;
   right: 0px;
@@ -1746,10 +1774,7 @@ textarea:focus {
 }
 
 .filter .select-container {
-  display: flex;
-  align-items: center;
   background-color: #a9b9af;
-  border-radius: 20px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 20px;
@@ -1784,8 +1809,6 @@ textarea:focus {
 
 .ruller-line {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 188px;
   height: 4px;
   background-color: #d1dad3;
@@ -1834,7 +1857,7 @@ textarea:focus {
   border: 1px solid white;
   position: absolute;
   top: 0px;
-  left: -32px;
+  left: -30px;
   bottom: 0px;
   right: 0px;
   margin-bottom: auto;
@@ -1849,8 +1872,8 @@ textarea:focus {
 .filter .radio:checked + .radio-fake::before{
   content: "";
   display: flex;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
   background-color: white;
   margin-bottom: auto;
@@ -1869,7 +1892,7 @@ textarea:focus {
   border-radius: 3px;
   position: absolute;
   top: 0px;
-  left: -32px;
+  left: -30px;
   bottom: 0px;
   right: 0px;
   margin-bottom: auto;
@@ -1893,32 +1916,7 @@ textarea:focus {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.filter-fieldset:first-child {
-  width: 193px;
-  margin-right: 15px;
-}
-
-.ruller-block {
-  margin-right: 15px;
-  width: 219px;
-}
-
-.filter-fieldset:nth-child(3) {
-  width: 415px;
-  box-sizing: border-box;
-}
-
-.filter-fieldset:nth-child(4) {
-  width: 702px;
-  margin-right: 12px;
-  margin-top: 14px;
-  box-sizing: border-box;
+  margin: auto;
 }
 
 .filter-button {
@@ -1926,7 +1924,7 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   height: 36px;
-  width: 145px;
+  width: 144px;
   background-color: #a6b7ae;
   box-sizing: border-box;
   border: 2px solid white;
@@ -1940,6 +1938,7 @@ textarea:focus {
   padding-right: 10px;
   margin-top: auto;
   cursor: pointer;
+  margin-left: 13px;
 }
 
 .filter-button:hover {
