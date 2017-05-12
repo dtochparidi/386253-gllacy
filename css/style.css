@@ -123,15 +123,15 @@ textarea:focus {
 }
 
 .main-title{
+  width: 670px;
   font-size: 60px;
   line-height: 60px;
-  font-weight: bold;
-  text-align:center;
-  flex: 0 0 100%;
+  text-align: center;
   order: -2;
   padding: 0px;
   margin: 0px;
   margin-top: 319px;
+  outline: 1px solid red;
 }
 
 .left-block .title, .right-block .title {
@@ -452,7 +452,6 @@ textarea:focus {
 
 .login-form {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   width: 277px;
   position: absolute;
@@ -497,7 +496,12 @@ textarea:focus {
   font-weight: bold;
 }
 
+.login-form .btn {
+}
+
 .login-form-a {
+  display: block;
+  width: 123px;
   font-size: 13px;
   line-height: 21px;
 }
@@ -688,16 +692,12 @@ textarea:focus {
 
 .slider {
   flex: 0 0 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  outline: 1px solid red;
 }
 
 .slide {
-  flex: 0 0 100%;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  justify-content: center;
   display: none;
 }
 
@@ -1949,4 +1949,22 @@ textarea:focus {
 
 .content-show {
   visibility: visible;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(-2000px);}
+  70%  { transform: translateY(30px);}
+  90%  { transform: translateY(-10px);}
+  100% { transform: translateY(0);}
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
