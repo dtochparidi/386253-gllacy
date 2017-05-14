@@ -331,6 +331,18 @@ textarea:focus {
   background-color: #f6b5a5;
 }
 
+.sub-menu-punkt.active {
+  background-color: #d07058;
+  color: #ffffff;
+  border-radius: 0px;
+}
+
+.main-header .main-navigation .sub-menu-punkt.active:hover {
+  background-color: #d07058;
+  color: #ffffff;
+  border-radius: 0px;
+}
+
 .user-block {
   display: flex;
   justify-content: flex-end;
@@ -348,7 +360,7 @@ textarea:focus {
   font-weight: 500;
   border: 0px;
   color: white;
-  outline: 0px;
+  cursor: pointer;
 }
 
 .user-block .btn-s:hover {
@@ -365,9 +377,9 @@ textarea:focus {
 }
 
 .btn-search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
   width: 32px;
   height: 32px;
   position: relative;
@@ -379,6 +391,7 @@ textarea:focus {
 
 .btn-search::before {
   content: "";
+  display: block;
   width: 17px;
   height: 17px;
   background-image: url(../img/sprite.png);
@@ -419,8 +432,9 @@ textarea:focus {
 }
 
 .btn-login {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
   min-width: 92px;
   height: 32px;
   padding-left: 45px;
@@ -439,6 +453,7 @@ textarea:focus {
 
 .btn-login::before {
   content: "";
+  display: block;
   width: 21px;
   height: 19px;
   position: absolute;
@@ -493,9 +508,6 @@ textarea:focus {
   font-weight: bold;
 }
 
-.login-form .btn {
-}
-
 .login-form-a {
   display: block;
   width: 123px;
@@ -511,13 +523,21 @@ textarea:focus {
 }
 
 .purchase {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
   min-width: 117px;
   height: 32px;
   padding-left: 45px;
   box-sizing: border-box;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  border: 0px;
+  color: white;
 }
 
 .catalogue-wrapper .main-header .purchase-white {
@@ -539,6 +559,7 @@ textarea:focus {
 
 .purchase::before {
   content: "";
+  display: block;
   width: 21px;
   height: 20px;
   position: absolute;
@@ -547,7 +568,7 @@ textarea:focus {
   background-position: -53px -168px;
 }
 
-.purchase:hover::before {
+.purchase-white:hover::before {
   background-position: -32px -187px;
 }
 
@@ -801,6 +822,7 @@ textarea:focus {
 
 .block-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 18px;
   line-height: 22px;
@@ -825,15 +847,15 @@ textarea:focus {
   padding-left: 20px;
   padding-top: 17px;
   width: 560px;
-  height: 229px;
+  min-height: 229px;
   box-sizing: border-box;
-  background-image: url(../img/malina-b.jpg);
+  background-image: url(../img/malina-b-tile.jpg);
   background-color: #35030c;
   border-radius: 15px;
 }
 
 .right-block {
-  background-image: url(../img/shoko-b.jpg);
+  background-image: url(../img/shoko-b-tile.jpg);
   background-color: #402012;
 }
 
@@ -1104,7 +1126,7 @@ textarea:focus {
   padding: 0px;
   margin: 0px;
   width: 560px;
-  height: 220px;
+  min-height: 220px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 22px;
@@ -1141,7 +1163,7 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   width: 560px;
-  height: 220px;
+  min-height: 220px;
   margin-left: 26px;
   background-color: #f8f7f4;
   background-image: url(../img/mail-background.png);
@@ -1155,8 +1177,8 @@ textarea:focus {
   flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
-  width: 550px;
-  height: 210px;
+  width: 98%;
+  height: 96%;
   padding-top: 29px;
   padding-left: 21px;
   padding-bottom: 35px;
@@ -1219,11 +1241,7 @@ textarea:focus {
 }
 
 .map-contacts {
-  display: flex;
-  justify-content:flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: block;
   margin: 0px;
   padding: 0px;
   width: 276px;
@@ -1312,6 +1330,8 @@ textarea:focus {
   left: 0px;
   z-index: 5;
   visibility: hidden;
+  opacity: 0;
+  transition: transition: opacity .3s ease, visibility .3s ease;
 }
 
 .feedback {
@@ -1410,42 +1430,56 @@ textarea:focus {
 }
 
 .social {
+  display: flex;
   width: 267px;
   position: relative;
 }
 
-.social-item::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(../img/sprite.png);
-  margin-top: 4px;
-  border: 3px solid #c2cec7;
+.social-item{
+  display: block;
   border-radius: 100%;
+  margin-top: 4px;
+  margin-right: 11px;
 }
 
-.social .social-item:nth-child(1)::after {
-  background-position: -65px -137px;
+.social-twitter::after {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 31px;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 7px;
+  left: 3px;
+  border-radius: 100%;
+  background-image: url(../img/twitter-b.png);
+  border: 3px solid #c2cec7;
 }
 
-.social .social-item:nth-child(1):active::after {
+.social .social-twitter:active::after {
   box-shadow: inset 0px 1px 2px 1px rgba(136, 136, 136, 0.7);
 }
 
-.social .social-item:nth-child(1):hover::after  {
+.social .social-twitter:hover::after  {
   background-image: url(../img/twitter-white.png);
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 7px;
+  left: 3px;
 }
 
-.social .social-item:nth-child(2)::after {
+.social .social-insta::after {
   background-position: -33px -137px;
+  content: "";
+  display: block;
+  width: 31px;
+  height: 31px;
   position: absolute;
-  top: 0px;
-  left: 50px;
+  top: 7px;
+  left: 3px;
+  border-radius: 100%;
+  background-image: url(../img/spri.png);
+  border: 3px solid #c2cec7;
 }
 
 .social .social-item:nth-child(2):active::after{
@@ -1951,9 +1985,13 @@ textarea:focus {
   display: none;
 }
 
-.content-show {
-  visibility: visible;
-  animation: bounce 0.6s;
+.feedback-container.content-show {
+   opacity: 1;
+   visibility: visible;
+}
+
+.feedback-container.content-show .feedback {
+    animation: bounce 0.6s;
 }
 
 @keyframes bounce {
