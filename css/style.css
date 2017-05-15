@@ -738,12 +738,6 @@ textarea:focus {
   background-color: white;
 }
 
-.site-wrapper {
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-  transition: background-image 0.5s ease, background-color 0.5s ease;
-}
-
 .site-wrapper::after,
 .site-wrapper::before {
   content: "";
@@ -758,19 +752,60 @@ textarea:focus {
   background-image: url(../img/slide-3.png);
 }
 
-#btn-1:checked ~ .site-wrapper {
+#btn-1:checked ~ .site-wrapper #slide-1::after{
+  content: "";
+  display: block;
+  width: 1045px;
+  height: 881px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url(../img/slide1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
   background-color: #849d8f;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-#btn-2:checked ~ .site-wrapper {
+#btn-2:checked ~ .site-wrapper #slide-2::after {
+  content: "";
+  display: block;
+  width: 1045px;
+  height: 881px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url(../img/slide2.png);
+  background-repeat: no-repeat;
+  z-index: -1;
   background-color: #8996a6;
 }
 
-#btn-3:checked ~ .site-wrapper {
+#btn-3:checked ~ .site-wrapper #slide-3::after {
+  content: "";
+  display: block;
+  width: 1045px;
+  height: 881px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url(../img/slide3.png);
-  background-color: #9d8b84;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-color: #849d8f;
 }
 
 .slider-radio {
