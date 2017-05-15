@@ -129,7 +129,6 @@ textarea:focus {
   order: -2;
   padding: 0px;
   margin: 0px;
-  margin-top: 319px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -720,10 +719,14 @@ textarea:focus {
 
 .slider {
   flex: 0 0 100%;
+  position: relative;
 }
 
 .slide {
   display: none;
+  position: relative;
+  padding-top: 319px;
+  min-height: 532px;
 }
 
 #btn-1:checked ~ .site-wrapper .container .slider #slide-1,
@@ -813,7 +816,7 @@ textarea:focus {
   justify-content: space-between;
   align-items: flex-start;
   position: absolute;
-  top: 563px;
+  bottom: -3px;
   left: 27px;
   width: 79px;
   margin: 0px;
