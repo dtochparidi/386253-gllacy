@@ -89,7 +89,6 @@ textarea:focus {
 .btn {
   padding: 0px;
   margin: 0px;
-  outline: 0px;
   border: 0px;
   border-radius: 50px;
   color: #ffffff;
@@ -1440,87 +1439,87 @@ textarea:focus {
   border-radius: 100%;
   margin-top: 4px;
   margin-right: 11px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 3px solid #c2cec7;
+}
+
+.social .social-item:last-child {
+  margin-right: 0px;
+}
+
+.social-item:hover::after {
+  opacity: 1;
+}
+
+.social-item:active::after {
+  box-shadow: inset 0px 1px 2px 1px rgba(136, 136, 136, 0.7);
 }
 
 .social-twitter::after {
   content: "";
-  display: block;
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 7px;
-  left: 3px;
   border-radius: 100%;
-  background-image: url(../img/twitter-b.png);
-  border: 3px solid #c2cec7;
-}
-
-.social .social-twitter:active::after {
-  box-shadow: inset 0px 1px 2px 1px rgba(136, 136, 136, 0.7);
-}
-
-.social .social-twitter:hover::after  {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
   background-image: url(../img/twitter-white.png);
   background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 7px;
-  left: 3px;
+  opacity: 0.8;
 }
 
-.social .social-insta::after {
-  background-position: -33px -137px;
+
+.social-insta::after {
   content: "";
-  display: block;
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 7px;
-  left: 3px;
   border-radius: 100%;
-  background-image: url(../img/spri.png);
-  border: 3px solid #c2cec7;
-}
-
-.social .social-item:nth-child(2):active::after{
-  box-shadow: inset 0px 1px 2px 1px rgba(136, 136, 136, 0.7);
-}
-
-.social .social-item:nth-child(2):hover::after {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
   background-image: url(../img/insta-white.png);
   background-position: center;
+  opacity: 0.8;
 }
 
-.social .social-item:nth-child(3)::after {
-  background-position: -1px -137px;
+.social-facebook::after {
+  content: "";
+  width: 30px;
+  height: 30px;
   position: absolute;
+  border-radius: 100%;
   top: 0px;
-  left: 99px;
-}
-
-.social .social-item:nth-child(3):active::after {
-  box-shadow: inset 0px 1px 2px 1px rgba(136, 136, 136, 0.7);
-}
-
-.social .social-item:nth-child(3):hover::after {
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
   background-image: url(../img/fb-white.png);
   background-position: center;
+  opacity: 0.8;
 }
 
-.social .social-item:nth-child(4)::after {
-  background-position: -1px -169px;
+.social-vk::after {
+  content: "";
+  width: 30px;
+  height: 30px;
   position: absolute;
+  border-radius: 100%;
   top: 0px;
-  left: 148px;
-}
-
-.social .social-item:nth-child(4):active::after {
-  box-shadow: inset 0px 1px 2px 1px rgba(136, 136, 136, 0.7);
-}
-
-.social .social-item:nth-child(4):hover::after {
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
   background-image: url(../img/vk-white.png);
   background-position: center;
+  opacity: 0.8;
 }
 
 .about {
@@ -1811,7 +1810,6 @@ textarea:focus {
 
 .filter .select {
   width: 100%;
-  outline: 0px;
   border: 0px;
   color: inherit;
   font-size: 16px;
@@ -1962,7 +1960,6 @@ textarea:focus {
   line-height: 18px;
   font-weight: 500;
   color: white;
-  outline: 0px;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: auto;
