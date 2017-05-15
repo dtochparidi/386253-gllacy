@@ -661,10 +661,6 @@ textarea:focus {
   color: #999999;
 }
 
-.purchase-rub {
-  margin-right:
-}
-
 .main-header .purchase-white::after {
   content: "";
   width: 21px;
@@ -695,11 +691,10 @@ textarea:focus {
   display: block;
   padding: 0px;
   margin: 0px;
-  margin-top: 4px;
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 4px;
   text-decoration: none;
 }
 
@@ -972,7 +967,6 @@ textarea:focus {
 .article-img {
   width: 266px;
   height: 266px;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -1306,13 +1300,14 @@ textarea:focus {
 }
 
 .map-contacts > .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
   height: 44px;
   min-width: 250px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 9px;
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -1330,7 +1325,7 @@ textarea:focus {
   z-index: 5;
   visibility: hidden;
   opacity: 0;
-  transition: transition: opacity .3s ease, visibility .3s ease;
+  transition: opacity .3s ease, visibility .3s ease;
 }
 
 .feedback {
