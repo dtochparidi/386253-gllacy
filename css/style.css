@@ -1001,7 +1001,7 @@ textarea:focus {
 }
 
 .letter {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .kg {
@@ -1449,7 +1449,7 @@ textarea:focus {
   display: block;
   border-radius: 100%;
   margin-top: 4px;
-  margin-right: 11px;
+  margin-right: 14px;
   width: 30px;
   height: 30px;
   position: relative;
