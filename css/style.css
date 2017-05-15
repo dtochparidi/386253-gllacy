@@ -395,6 +395,12 @@ textarea:focus {
   height: 17px;
   background-image: url(../img/sprite.png);
   background-position: -74px -188px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
 }
 
 .btn-search:hover::before {
@@ -459,6 +465,11 @@ textarea:focus {
   right: 55px;
   background-image: url(../img/sprite.png);
   background-position: -53px -188px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .login-form {
@@ -565,6 +576,11 @@ textarea:focus {
   right: 80px;
   background-image: url(../img/sprite.png);
   background-position: -53px -168px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .purchase-white:hover::before {
@@ -668,7 +684,7 @@ textarea:focus {
   position: absolute;
   top: 6px;
   right: 80px;
-  background-image: url(../img/korzina-red-b.png);
+  background-image: url(../img/basket-red-b.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -843,13 +859,13 @@ textarea:focus {
   width: 560px;
   min-height: 229px;
   box-sizing: border-box;
-  background-image: url(../img/malina-b-tile.jpg);
+  background-image: url(../img/raspberries-b-tile.jpg);
   background-color: #35030c;
   border-radius: 15px;
 }
 
 .right-block {
-  background-image: url(../img/shoko-b-tile.jpg);
+  background-image: url(../img/choc-b-tile.jpg);
   background-color: #402012;
 }
 
@@ -1534,7 +1550,7 @@ textarea:focus {
   display: block;
   width: 15px;
   height: 13px;
-  background-image: url(../img/serdce-b.png);
+  background-image: url(../img/heart-b.png);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
