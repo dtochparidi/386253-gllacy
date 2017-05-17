@@ -258,7 +258,7 @@ textarea:focus {
   color: #ffbc9e;
 }
 
-.menu-punkt {
+.menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +275,7 @@ textarea:focus {
   text-decoration: underline;
 }
 
-.container .menu-punkt:hover {
+.container .menu-item:hover {
   background-color: #f7f6f3;
   border-radius: 20px;
   color: #333333;
@@ -283,7 +283,7 @@ textarea:focus {
   cursor: pointer;
 }
 
-.menu-punkt:active {
+.menu-item:active {
   -webkit-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, .004);
           box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, .004);
 }
@@ -321,7 +321,7 @@ textarea:focus {
   width: 100%;
 }
 
-.sub-menu-punkt {
+.sub-menu-item {
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
@@ -361,21 +361,21 @@ textarea:focus {
   padding-bottom: 13px;
 }
 
-.sub-menu-punkt:hover {
+.sub-menu-item:hover {
   background-color: #fbded7;
 }
 
-.sub-menu-punkt:active {
+.sub-menu-item:active {
   background-color: #f6b5a5;
 }
 
-.sub-menu-punkt.active {
+.sub-menu-item.active {
   background-color: #d07058;
   color: #ffffff;
   border-radius: 0px;
 }
 
-.main-header .main-navigation .sub-menu-punkt.active:hover {
+.main-header .main-navigation .sub-menu-item.active:hover {
   background-color: #d07058;
   color: #ffffff;
   border-radius: 0px;
@@ -1869,7 +1869,7 @@ textarea:focus {
   margin: 0px;
 }
 
-.root-punkt {
+.root-item {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
